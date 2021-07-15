@@ -1,315 +1,288 @@
 {% load static %}
+
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<title>Brickary</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="{% static 'styles/layout.css' %} ">
-
+  <title>Global</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
 </head>
-<body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row0">
-  <div id="topbar" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="fl_left">
-      <ul>
-        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-      </ul>
-    </div>
-    <div class="fl_right">
-      <ul>
-        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-      </ul>
-    </div>
-    <!-- ################################################################################################ -->
-  </div>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    
+    <img src="{% static 'img/logo.png'%}" alt="Global">
+    <p>Global</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper
-style="background-image:url('images/demo/backgrounds/01.png');"
- -->
-<div class="bgded overlay" > 
-  <!-- ################################################################################################ -->
-  <div class="wrapper row1">
-    <header id="header" class="hoc clear"> 
-      <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <h1><a href="index.html">Brickary</a></h1>
-      </div>
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a class="drop" href="#">Pages</a>
-            <ul>
-              <li><a href="pages/gallery.html">Gallery</a></li>
-              <li><a href="pages/full-width.html">Full Width</a></li>
-              <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-              <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-              <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-            </ul>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            
+            <img src="{% static 'img/logo.png'%}" alt="Global">
+            <p>Global</p>
+          </a>
+          <button class="header--cta cta">Hire Us</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Works</span></li>
+            <li><span>About</span></li>
+            <li><span>Contact</span></li>
+            <li><span>Hire us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Your next<br>interactive<br>experience</h1>
+                <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+               
+                <img src="{% static 'img/introduction-visual.png'%}" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>Metiew &amp; Smith</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+                <a href="#0">
+                  <h3>Fantasy interactive</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+                <a href="#0">
+                  <h3>Paul &amp; shark</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+              </div>
+            </div>
           </li>
-          <li><a class="drop" href="#">Dropdown</a>
-            <ul>
-              <li><a href="#">Level 2</a></li>
-              <li><a class="drop" href="#">Level 2 + Drop</a>
-                <ul>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        
+                        <img src=" {% static 'img/work-victory.jpg'%}" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Victory</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        
+                        <img src="{% static 'img/work-metiew-smith.jpg'%}" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Metiew &amp; Smith</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        
+                        <img src="{% static 'img/work-alex-nowak.jpg'%}" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Alex Nowak</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
                 </ul>
-              </li>
-              <li><a href="#">Level 2</a></li>
-            </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </li>
-          <li><a href="#">Link Text</a></li>
-          <li><a href="#">Link Text</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
-    </header>
-  </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <div id="pageintro" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="flexslider basicslider">
-      <ul class="slides">
-        <li>
-          <article>
-            <p>Egestas</p>
-            <h3 class="heading">Elementum dictum</h3>
-            <p>Cursus mauris vitae ligula accumsan sed</p>
-            <footer>
-              <form class="group" method="post" action="#">
-                <fieldset>
-                  <legend>Sign-Up:</legend>
-                  <input type="email" value="" placeholder="Email Here&hellip;">
-                  <button class="fa fa-sign-in" type="submit" title="Submit"><em>Submit</em></button>
-                </fieldset>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>We<br>believe in<br>passionate<br>people</h2>
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                
+                <img src="{% static 'img/about-visual.png'%}" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="#0">
+                  <h3>Winners</h3>
+                </a>
+                <a href="#0">
+                  <h3>Philosophy</h3>
+                </a>
+                <a href="#0">
+                  <h3>History</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+              <h2>You want us to do</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox" value="app design">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      App Design
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Graphic Design
+                    </label>
+                    <input id="opt-3" type="checkbox" value="motion design">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Motion Design
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" type="checkbox" value="ux design">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      UX Design
+                    </label>
+                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Webdesign
+                    </label>
+                    <input id="opt-6" type="checkbox" value="marketing">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Marketing
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Send Request">
               </form>
-            </footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <p>Pulvinar</p>
-            <h3 class="heading">Viverra iaculis</h3>
-            <p>Orci nam nec dolor dapibus dignissim tortor</p>
-            <footer><a class="btn inverse" href="#">Facilisis etiam</a></footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <p>Maximus</p>
-            <h3 class="heading">Tincidunt viverra</h3>
-            <p>Sed feugiat tellus quisque vehicula convallis</p>
-            <footer><a class="btn" href="#">Efficitur convallis</a></footer>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <!-- ################################################################################################ -->
-  </div>
-  <!-- ################################################################################################ -->
-</div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row3 coloured">
-  <main class="hoc container clear"> 
-    <!-- main body -->
-    <!-- ################################################################################################ -->
-    <div id="introblocks">
-      <ul class="nospace group">
-        <li class="one_third first">
-          <article>
-            <div>
-              <h6 class="heading">Lacinia vivamus lorem</h6>
-              <p>Ex mauris faucibus libero sed maximus lobortis nunc luctus nisi luctus varius convallis [&hellip;]</p>
             </div>
-           
-            <img src="{% static 'images/demo/320x180.png' %} " alt="">
-            <footer><a href="#">More Details</a></footer>
-          </article>
-        </li>
-        <li class="one_third">
-          <article>
-            <div>
-              <h6 class="heading">Aliquam dolor blandit</h6>
-              <p>Posuere lectus leo facilisis nisi nunc nibh nibh consectetur vel consectetur consequat eget neque [&hellip;]</p>
-            </div>
-            
-            <img src="{% static 'images/demo/320x180.png'%} " alt="">
-            <footer><a href="#">More Details</a></footer>
-          </article>
-        </li>
-        <li class="one_third">
-          <article>
-            <div>
-              <h6 class="heading">Nibh aliquam imperdiet</h6>
-              <p>Dolor in turpis ultricies faucibus nunc eu turpis lobortis iaculis suspendisse vel tincidunt lectus [&hellip;]</p>
-            </div>
-            
-            <img src="{% static 'images/demo/320x180.png'%}" alt="">
-            <footer><a href="#">More Details</a></footer>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <p class="center"><a class="btn inverse" href="#">Consequat commodo</a></p>
-    <!-- ################################################################################################ -->
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################
-style="background-image:url('images/demo/backgrounds/02.png');" -->
-<div class="wrapper bgded overlay" >
-  <section class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle center">
-      <h3 class="heading">Augue eget iaculis mauris</h3>
-      <p>Morbi sed molestie metus nunc malesuada lorem ut consectetur.</p>
-    </div>
-    <ul class="nospace group center">
-      <li class="one_third first">
-        <article><a href="#"><i class="btmspace-30 icon fa fa-500px"></i></a>
-          <h6 class="heading font-x1">Sodales sollicitudin</h6>
-          <p>Cursus elit tristique et sed id convallis arcu sed ac facilisis ligula nec maximus felis imperdiet condimentum [&hellip;]</p>
-          <footer><a href="#">Read More &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="btmspace-30 icon fa fa-envira"></i></a>
-          <h6 class="heading font-x1">Maecenas et bibendum</h6>
-          <p>Dolor et vestibulum phasellus scelerisque magna sapien non maximus sem faucibus id vestibulum neque eros [&hellip;]</p>
-          <footer><a href="#">Read More &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><a href="#"><i class="btmspace-30 icon fa fa-empire"></i></a>
-          <h6 class="heading font-x1">Placerat ullamcorper</h6>
-          <p>Ac iaculis eleifend nibh nulla aliquet orci quis urna tristique egestas sed scelerisque dolor ipsum placerat [&hellip;]</p>
-          <footer><a href="#">Read More &raquo;</a></footer>
-        </article>
-      </li>
-    </ul>
-    <!-- ################################################################################################ -->
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <div class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="group">
-      <section class="one_half first">
-        <h6 class="heading btmspace-50">From The Blog</h6>
-        <ul class="nospace">
-          <li class="btmspace-30">
-            <article>
-              <h4 class="nospace"><a href="#">Facilisis mauris tellus gravida elit ac eleifend nunc lorem</a></h4>
-              <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            </article>
-          </li>
-          <li class="btmspace-30">
-            <article>
-              <h4 class="nospace"><a href="#">Felis turpis semper at velit non porttitor semper libero</a></h4>
-              <time class="font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="nospace"><a href="#">Dignissim arcu nec vulputate purus semper aliquam rhoncus</a></h4>
-              <time class="font-xs" datetime="2045-04-04">Wednesday, 4<sup>th</sup> April 2045</time>
-            </article>
           </li>
         </ul>
-      </section>
-      <section class="one_half">
-        <h6 class="heading btmspace-50">Newsletter</h6>
-        <p>Sed a eros ornare pulvinar lorem eget volutpat ex fusce sollicitudin porta erat ac dictum sed nec augue augue praesent congue.</p>
-        <p class="btmspace-30">Ullamcorper neque a bibendum dolor placerat non nulla facilisi nullam ac velit.</p>
-        <form id="newsletter" method="post" action="#">
-          <fieldset>
-            <legend>Newsletter:</legend>
-            <input class="btmspace-15" type="text" value="" placeholder="Name">
-            <input class="btmspace-15" type="text" value="" placeholder="Email">
-            <button type="submit" value="submit">Submit</button>
-          </fieldset>
-        </form>
-      </section>
+      </div>
     </div>
-    <!-- ################################################################################################ -->
   </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Works</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Hire us</li>
+  </ul>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ 
-style="background-image:url('images/demo/backgrounds/03.png');"-->
 
-<div class="wrapper row4 bgded overlay" >
-  <footer id="footer" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <h3 class="heading">Brickary</h3>
-    <nav>
-      <ul class="nospace inline pushright uppercase">
-        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Cookies</a></li>
-        <li><a href="#">Disclaimer</a></li>
-      </ul>
-    </nav>
-    <ul class="faico clear">
-      <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-      <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-      <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-      <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-      <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-      <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-    </ul>
-    <!-- ################################################################################################ -->
-  </footer>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-
-
-<script src="{% static 'scripts/jquery.min.js' %}"></script>
-<script src="{% static 'scripts/jquery.backtotop.js' %}"></script>
-<script src="{% static 'scripts/jquery.mobilemenu.js' %}"></script>
-<script src="{% static 'scripts/jquery.flexslider-min.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="{% static 'js/functions-min.js'%}"></script>
 </body>
 </html>
