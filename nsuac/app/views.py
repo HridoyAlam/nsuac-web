@@ -24,3 +24,6 @@ def all_events(request):
 
 def faculty_advisor(request):
     return render(request, 'faculty_advisor.html', {})
+
+def club_life(request):
+    return render(request, 'club_life.html', {})
