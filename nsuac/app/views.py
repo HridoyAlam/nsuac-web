@@ -21,3 +21,6 @@ def hallOfFame(request):
 
 def all_events(request):
     return render(request, 'all_events.html', {})
+
+def faculty_advisor(request):
+    return render(request, 'faculty_advisor.html', {})
