@@ -2993,11 +2993,12 @@ div.panel {
    Home 2
    ============================================================== */
 .nav-menu2 .navbar-light .navbar-nav .nav-link {
-  color: #2d2d2d;
+  color: #FFF;
+  font-weight: 900;
   font-size: 16px;
   line-height: 2; }
   .nav-menu2 .navbar-light .navbar-nav .nav-link:hover {
-    color: #cbb58b; }
+    color: #F2A922; }
 
 .nav-menu2 .navbar-nav > li {
   margin: 0 4px; }
@@ -3557,7 +3558,7 @@ div.panel {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  background: #fff; }
+  background: #1991CB; }
 
 .affix {
   position: fixed;
@@ -3568,7 +3569,7 @@ div.panel {
 
 /* fixed to top styles */
 .affix {
-  background-color: #fff;
+  background-color: #1991CB;
   border-bottom: 1px solid #e6e6e6;
   -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.2); }
