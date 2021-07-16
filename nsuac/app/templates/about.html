@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a href="index.html"><img src="images/responsive-logo.png" class="responsive-logo img-fluid" alt="responsive-logo"></a>
+                <a href="index.html"><img src="{% static 'images/responsive-logo.png' %}" class="responsive-logo img-fluid" alt="responsive-logo"></a>
             </div>
         </div>
          
@@ -29,10 +29,10 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
                     <br>
                     <br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
-                    <a href="#" class="btn btn-default btn-about">VIEW OUR COURSE</a>
+                    <a href="{% url 'all_events' %}" class="btn btn-default btn-about">VIEW OUR EVENTS</a>
                 </div>
                 <div class="col-md-5">
-                    <img src="images/welcome-img.jpg" class="img-fluid" alt="#">
+                    <img src="{% static 'images/welcome-img.jpg' %}" class="img-fluid" alt="#">
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
                             <p class="quote_text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Printing and typesetting industry. It has survived not only five centuries.</p>
                             <div class="testi-img_block">
-                                <img src="images/testi-img.jpg" class="img-fluid" alt="#">
+                                <img src="{% static 'images/testi-img.jpg' %}" class="img-fluid" alt="#">
                                 <p><span>Student Name</span> Top rank holder</p>
                             </div>
                         </div>
@@ -59,7 +59,8 @@
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
                             <p class="quote_text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Printing and typesetting industry. </p>
                             <div class="testi-img_block">
-                                <img src="images/testi-img.jpg" class="img-fluid" alt="#">
+                                
+                                <img src="{% static 'images/testi-img.jpg' %}" class="img-fluid" alt="#">
                                 <p><span>Student Name</span> Top rank holder</p>
                             </div>
                         </div>

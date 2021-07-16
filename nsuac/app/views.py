@@ -27,3 +27,6 @@ def faculty_advisor(request):
 
 def club_life(request):
     return render(request, 'club_life.html', {})
+
+def update(request):
+    return render(request, 'update.html', {})

@@ -10,5 +10,6 @@ urlpatterns = [
     path('hallOfFame.html', views.hallOfFame, name="hallOfFame"),
     path('all_events', views.all_events, name="all_events"),
     path('faculty_advisor', views.faculty_advisor, name= "faculty_advisor"),
-    path('club_life', views.club_life, name='club_life')
+    path('club_life', views.club_life, name='club_life'),
+    path('update', views.update, name='update')
 ]

@@ -73,7 +73,7 @@
                                     <a class="nav-link" href="{% url 'about' %}">About<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="admission-form.html">Updates</a>
+                                    <a class="nav-link" href="{% url 'update' %}">Updates</a>
                                 </li>
                                 <li class="js-navbar-collapse">
                                   <ul class="nav navbar-nav">
@@ -130,8 +130,7 @@
                     <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
                     <li><a class="dropdown-item" href="index-landing-page.html">Landing Page</a></li>
                     <li><a class="dropdown-item" href="{% url 'all_events' %}">Events</a></li>
-                    <li><a class="dropdown-item" href="course-detail.html">Course Details</a></li>
-                    <li><a class="dropdown-item" href="campus-life.html">Campus Life</a></li>
+                    <li><a class="dropdown-item" href="{% url 'club_life' %}">Club Life</a></li>
                     <li><a class="dropdown-item" href="teachers-single.html">Our teachers</a></li>
                     <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>  
                     <li><a class="dropdown-item" href="shortcodes.html">Shortcodes</a></li>
@@ -161,7 +160,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -223,7 +222,7 @@
                         <h3>Navigation</h3>
                         <ul>
                             <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="admission-form.html">Admissions </a></li>
+                            <li><a href="{% url 'update' %}">Update </a></li>
                             <li><a href="admission.html">Academics</a></li>
                             <li><a href="research.html">Research</a></li>
                             <li><a href="{% url 'contact' %}">Contact</a></li>
@@ -234,15 +233,16 @@
                     <div class="tweet_box">
                         <h3>Tweets</h3>
                         <div class="tweet-wrap">
+                              <!--
                             <div class="tweet"></div>
-                            <!-- // end .tweet -->
+                           // end .tweet -->
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="address">
                         <h3>Contact us</h3>
-                        <p><span>Address: </span> North South University, Bashundhara, Dhaka-1213</p>
+                        <p><span>Address: </span> North South University, Bashundhara, Dhaka-1229</p>
                         <p>Email : athletics.club@northsouth.edu
                             <br> Phone : +00 000 0000 000</p>
                             <ul class="footer-social-icons">
