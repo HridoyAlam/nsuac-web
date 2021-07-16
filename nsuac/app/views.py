@@ -9,3 +9,12 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html', {})
+
+def eb(request):
+    return render(request, 'eb.html', {})
+
+def subeb(request):
+    return render(request, 'subeb.html', {})
+
+def hallOfFame(request):
+    return render(request, 'hallOfFame.html', {})
