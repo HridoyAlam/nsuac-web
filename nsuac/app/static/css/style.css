@@ -276,6 +276,12 @@ h4 {
 p {
   font-size: 17px; }
 
+.p_details{
+  
+    text-align: justify;
+
+}
+
 a {
   color: #cbb58b;
   -webkit-transition: all 0.3s ease;
