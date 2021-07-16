@@ -294,7 +294,9 @@ a {
    ============================================================== */
 .slider_img {
   width: 100%;
-  background: #000; }
+  background: #000; 
+  opacity: 0.6;
+}
   .slider_img img {
     min-width: 100%;
     -o-object-fit: cover;
