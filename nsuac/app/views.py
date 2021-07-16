@@ -18,3 +18,6 @@ def subeb(request):
 
 def hallOfFame(request):
     return render(request, 'hallOfFame.html', {})
+
+def all_events(request):
+    return render(request, 'all_events.html', {})
