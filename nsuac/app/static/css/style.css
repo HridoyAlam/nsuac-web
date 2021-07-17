@@ -731,7 +731,11 @@ a {
   -webkit-background-size: cover;
   background-size: cover;
   padding: 97px 0; }
-
+.sponsor_head{
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
 .chart-img img {
   margin: 21px 0 0;
   padding-right: 16px;
@@ -3630,3 +3634,4 @@ div.panel {
     transition: all 0.2s ease; } }
 
 /*# sourceMappingURL=style.css.map */
+/*sponsors */
