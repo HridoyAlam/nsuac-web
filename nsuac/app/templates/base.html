@@ -78,7 +78,7 @@
                                 <li class="js-navbar-collapse">
                                   <ul class="nav navbar-nav">
                                     <li class="dropdown mega-dropdown">
-                                        <a href="academics.html" class="dropdown-toggle nav-link" data-toggle="dropdown">Academics <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+                                        <a href="academics.html" class="dropdown-toggle nav-link" data-toggle="dropdown">Events <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
                                         <ul class="dropdown-menu mega-dropdown-menu row">
                                           <li class="col-lg-3">
                                               
@@ -86,34 +86,32 @@
                                        </li>
                                        <li class="col-lg-3">
                                           <ul>
-                                            <li class="dropdown-header">Science &amp; Technology</li>
-                                            <li><a href="course-detail.html">Mechanical Engineering</a></li>
-                                            <li><a href="course-detail.html">Computer Science</a></li>
-                                            <li><a href="course-detail.html">Electrical Engineering</a></li>
-                                            <li><a href="course-detail.html">Civil Engineering</a></li>
-                                            <li><a href="course-detail.html">Finance</a></li>
+                                            <li class="dropdown-header">OUTDOOR</li>
+                                            <li><a href="course-detail.html">NFL</a></li>
+                                            <li><a href="#">NCL</a></li>
+                                            <li><a href="#">NSU Intra Batch Cricket</a></li>
+                                            <li><a href="#">NSU Intra Batch Football</a></li>
+                                            <li><a href="#">NSU Tryouts</a></li>
                                             <li class="divider"></li>
                                         </ul>
                                     </li>
                                     <li class="col-lg-3">
                                       <ul>
-                                      <li class="dropdown-header">Management Studies</li>
-                                         <li><a href="course-detail.html">Human Resource Management</a></li>
-                                         <li><a href="course-detail.html">Communication Engineering</a></li>
-                                         <li><a href="course-detail.html">Sales and Marketing</a></li>
-                                         <li><a href="course-detail.html">Operations Management</a></li>
-                                         <li><a href="course-detail.html">Information Technology</a></li>
+                                      <li class="dropdown-header">INDOOR</li>
+                                         <li><a href="#">NSU Chess Master & Carrom Champ</a></li>
+                                         <li><a href="#">Shuttle Master</a></li>
+                                         <li><a href="course-detail.html">NSU Intra Basketball Champ</a></li>
+                                         <li><a href="course-detail.html">TT Champs</a></li>
                                          <li class="divider"></li>
                                      </ul>
                                  </li>
                                  <li class="col-lg-3">
                                    <ul>
-                                   <li class="dropdown-header">Engineering</li>
-                                    <li><a href="course-detail.html">Automobile Engineering</a></li>
-                                    <li><a href="course-detail.html">Banking and Finance</a></li>
-                                    <li><a href="course-detail.html">Anatomy</a></li>
-                                    <li><a href="course-detail.html">Architecture Engineering</a></li>
-                                    <li><a href="course-detail.html">Mechatronics Engineering</a></li>
+                                    <li class="dropdown-header">SIGNATURE EVENT</li>
+                                    <li><a href="course-detail.html">NSU IPUSC</a></li>
+                                    <li class="dropdown-header">ONLINE</li>
+                                    <li><a href="course-detail.html">BBS</a></li>
+                                    <li><a href="course-detail.html">Fit For Future</a></li>
                                     <li class="divider"></li>
                                 </ul>
                             </li>
@@ -126,12 +124,11 @@
                     Pages<span class="glyphicon glyphicon-chevron-down pull-right"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'faculty_advisor' %}">Faculty Advisor</a></li>
                     <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                     <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
                     <li><a class="dropdown-item" href="index-landing-page.html">Landing Page</a></li>
-                    <li><a class="dropdown-item" href="{% url 'all_events' %}">Events</a></li>
                     <li><a class="dropdown-item" href="{% url 'club_life' %}">Club Life</a></li>
-                    <li><a class="dropdown-item" href="teachers-single.html">Our teachers</a></li>
                     <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>  
                     <li><a class="dropdown-item" href="shortcodes.html">Shortcodes</a></li>
                     
@@ -168,7 +165,6 @@
                 Member<span class="glyphicon glyphicon-chevron-down pull-right"></span>
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'faculty_advisor' %}">Faculty Advisor</a></li>
                 <li><a class="dropdown-item" href="{% url 'eb' %}">EB</a></li>
                 <li><a class="dropdown-item" href="{% url 'subeb' %}">SUB EB</a></li>
                 <li><a class="dropdown-item" href="{% url 'hallOfFame' %}">Hall of Fame</a></li>
