@@ -736,6 +736,12 @@ a {
   text-align: center;
   font-weight: 700;
 }
+.sponsor_logo{
+  width: 20%;
+}
+.sponsor_logo img{
+  width: 100%;
+}
 .chart-img img {
   margin: 21px 0 0;
   padding-right: 16px;
