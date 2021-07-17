@@ -301,7 +301,7 @@ a {
 .slider_img {
   width: 100%;
   background: #000; 
-  opacity: 0.6;
+  background-color: rgba(0,0,0,0.7);
 }
   .slider_img img {
     min-width: 100%;
@@ -313,10 +313,13 @@ a {
       .slider_img img {
         max-height: 730px; } }
 
+
 .carousel-caption {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  background-color: rgba(0,0,128,0.4);
+
   top: 50%; }
   @media (min-width: 992px) {
     .carousel-caption {
@@ -334,6 +337,7 @@ a {
       top: 45%; } }
 
 .slider_title h1 {
+
   text-align: center;
   color: #fff;
   margin-bottom: 40px;
@@ -353,6 +357,7 @@ a {
 
 .carousel-indicators .active {
   background: #cbb58b; }
+
 
 .fa-slider {
   padding: 14px 14px;
