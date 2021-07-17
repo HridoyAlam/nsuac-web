@@ -1,8 +1,15 @@
 from django.shortcuts import render
-#from .models import service
+from .models import Slider
+import json
+import requests
+from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponse
+
 # Create your views here.
 def home(request):
-    return render(request, 'home.html', {})
+    slider = Slider.objects.all()
+    context = {'slider': slider}
+    return render(request, 'home.html', context)
 
 def about(request):
     return render(request, 'about.html', {})
