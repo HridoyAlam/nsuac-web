@@ -84,37 +84,36 @@
                                             <ul class="dropdown-menu mega-dropdown-menu row">
                                                 <li class="col-lg-3">
 
-                                                    <img src="{% static 'images/courses_4.jpg'%}" class="img-fluid dropdown-header" alt="#">
+                                                    <img src="{% static 'images/event.jpg'%}" class="img-fluid dropdown-header" alt="#">
                                                 </li>
                                                 <li class="col-lg-3">
                                                     <ul>
                                                         <li class="dropdown-header">OUTDOOR</li>
-                                                        <li><a href="course-detail.html">NFL</a></li>
-                                                        <li><a href="#">NCL</a></li>
-                                                        <li><a href="#">NSU Intra Batch Cricket</a></li>
-                                                        <li><a href="#">NSU Intra Batch Football</a></li>
-                                                        <li><a href="#">NSU Tryouts</a></li>
+                                                        <li><a href="{% url 'nfl' %}">NFL</a></li>
+                                                        <li><a href="{% url 'ncl' %}">NCL</a></li>
+                                                        <li><a href="{% url 'batch_cricket' %}">NSU Intra Batch Cricket</a></li>
+                                                        <li><a href="{% url 'batch_football' %}">NSU Intra Batch Football</a></li>
+                                                        <li><a href="{% url 'tryouts' %}">NSU Tryouts</a></li>
                                                         <li class="divider"></li>
                                                     </ul>
                                                 </li>
                                                 <li class="col-lg-3">
                                                     <ul>
                                                         <li class="dropdown-header">INDOOR</li>
-                                                        <li><a href="#">Intra NSU Chess Master</a></li>
-                                                        <li><a href="#">Intra NSU Carrom Champ</a></li>
-                                                        <li><a href="#">Shuttle Master</a></li>
-                                                        <li><a href="course-detail.html">NSU Intra Basketball Champ</a></li>
-                                                        <li><a href="course-detail.html">NSU Intra TT Champs</a></li>
+                                                        <li><a href="{% url 'chess_carrom' %}">Intra NSU Chess Master <br> & Carrom Champs</a></li>
+                                                        <li><a href="{% url 'shuttle_master' %}">Shuttle Master</a></li>
+                                                        <li><a href="{% url 'basketball' %}">NSU Intra Basketball Champ</a></li>
+                                                        <li><a href="{% url 'table_tennis' %}">NSU Intra TT Champs</a></li>
                                                         <li class="divider"></li>
                                                     </ul>
                                                 </li>
                                                 <li class="col-lg-3">
                                                     <ul>
                                                         <li class="dropdown-header">SIGNATURE EVENT</li>
-                                                        <li><a href="course-detail.html">NSU IPUSC</a></li>
+                                                        <li><a href="http://www.nsusportscarnival.com/">NSU IPUSC</a></li>
                                                         <li class="dropdown-header">ONLINE</li>
-                                                        <li><a href="course-detail.html">BBS</a></li>
-                                                        <li><a href="course-detail.html">Fit For Future</a></li>
+                                                        <li><a href="#">BBS</a></li>
+                                                        <li><a href="{% url 'fff' %}">Fit For Future</a></li>
                                                         <li class="divider"></li>
                                                     </ul>
                                                 </li>
@@ -155,9 +154,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="research.html">Research</a>
-                                </li>
+                                
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="{% url 'contact' %}">Contact</a>
@@ -168,8 +165,8 @@
                                         Member<span class="glyphicon glyphicon-chevron-down pull-right"></span>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{% url 'eb' %}">EB</a></li>
-                                        <li><a class="dropdown-item" href="{% url 'subeb' %}">SUB EB</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'eb' %}">Executive Body Member</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'subeb' %}">SUB Executive Body Member</a></li>
                                         <li><a class="dropdown-item" href="{% url 'hallOfFame' %}">Hall of Fame</a></li>
                                     </ul>
                                 </li>
