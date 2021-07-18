@@ -2980,7 +2980,7 @@ div.panel {
   transition: 0.5s; }
 
 .contact-option {
-  border-right: 1px solid #ad9566;
+  border-right: 1px solid #F2A922;
   padding: 45px 64px; }
   .contact-option .form-control {
     border-color: transparent; }
@@ -3005,7 +3005,7 @@ div.panel {
   padding: 0 30px 0 30px; }
 
 .contact-center {
-  background: #ad9566;
+  background: #F2A922;
   border-radius: 50%;
   text-align: center;
   width: 44px;
@@ -3027,7 +3027,7 @@ div.panel {
     border: 0;
     padding: 20px 15px; }
   .contact-option_rsp {
-    border-bottom: 1px solid #ad9566;
+    border-bottom: 1px solid #F2A922;
     padding: 5px 25px 30px; }
   .contact-center {
     display: none; } }
