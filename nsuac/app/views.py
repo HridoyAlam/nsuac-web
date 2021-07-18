@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Slider
+from .models import Slider,Upcoming_event
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
@@ -8,7 +8,10 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
     slider = Slider.objects.all()[0]
-    context = {'slider': slider}
+    up_event = Upcoming_event.objects.all()[0]
+    context = {'slider': slider,
+                'up_event':up_event
+                }
     return render(request, 'home.html', context)
 
 def about(request):

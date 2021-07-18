@@ -9,3 +9,13 @@ class Slider(models.Model):
 
     def __str__(self):
         return self.slide_title
+
+class Upcoming_event(models.Model):
+    up_event_id = models.AutoField
+    up_event_date = models.DateField()
+    up_event_title = models.CharField(max_length=30)
+    up_event_details = models.CharField(max_length=50)
+    up_event_image = models.ImageField(upload_to = 'app/images',default = "")
+
+    def __str__(self) -> str:
+        return self.up_event_title
