@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    slider = Slider.objects.all()
+    slider = Slider.objects.all()[0]
     context = {'slider': slider}
     return render(request, 'home.html', context)
 
@@ -37,3 +37,37 @@ def club_life(request):
 
 def update(request):
     return render(request, 'update.html', {})
+
+### outdoor events
+
+def nfl(request):
+    return render(request, 'nfl.html', {})
+
+def ncl(request):
+    return render(request, 'ncl.html', {})
+
+def batch_cricket(request):
+    return render(request, 'batch_cricket.html', {})
+
+def batch_football(request):
+    return render(request, 'batch_football.html', {})
+
+def tryouts(request):
+    return render(request, 'tryouts.html', {})
+
+### indoor events
+
+def chess_carrom(request):
+    return render(request, 'chess_carrom.html', {})
+
+def shuttle_master(request):
+    return render(request, 'shuttle_master.html', {})
+
+def basketball(request):
+    return render(request, 'basketball.html', {})
+
+def table_tennis(request):
+    return render(request, 'table_tennis.html', {})
+
+def fff(request):
+    return render(request, 'fff.html', {})
