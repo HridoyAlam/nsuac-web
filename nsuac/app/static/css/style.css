@@ -510,6 +510,7 @@ a {
 
 .course-img-wrap {
   position: relative; 
+
   height: 245px;}
 
 .course-box-content {
@@ -517,6 +518,15 @@ a {
   padding: 30px 20px; 
 
 height: 175px;}
+
+@media (max-width: 991px) {
+  .course-img-wrap {
+  height: 400px;}
+
+.course-box-content {
+height: 110px;}
+
+}
 
 .courses_icon {
   -webkit-transition: all 0.5s;
@@ -743,6 +753,7 @@ height: 175px;}
   color: white;
   text-align: center;
   font-weight: 700;
+  margin-bottom: 2vw;
 }
 .sponsor_logo{
   width: 20%;
