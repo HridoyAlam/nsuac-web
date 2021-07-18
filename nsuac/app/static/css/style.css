@@ -504,7 +504,8 @@ a {
     animation-delay: 0.9s; }
 
 .course-img-wrap {
-  position: relative; }
+  position: relative; 
+  height: 245px;}
 
 .course-box-content {
   display: block;
@@ -738,6 +739,7 @@ a {
 }
 .sponsor_logo{
   width: 20%;
+  height:20%;
 }
 .sponsor_logo img{
   width: 100%;
@@ -3593,7 +3595,7 @@ div.panel {
 /* fixed to top styles */
 .affix {
   background-color: #1991CB;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 0px solid #e6e6e6;
   -webkit-box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.2); }
 
