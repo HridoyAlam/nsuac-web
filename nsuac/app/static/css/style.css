@@ -504,7 +504,8 @@ a {
     animation-delay: 0.9s; }
 
 .course-img-wrap {
-  position: relative; }
+  position: relative; 
+  height: 245px;}
 
 .course-box-content {
   display: block;
