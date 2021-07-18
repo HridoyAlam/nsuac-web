@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    slider = Slider.objects.all()[0]
+    slider = Slider.objects.all()
     context = {'slider': slider}
     return render(request, 'home.html', context)
 
