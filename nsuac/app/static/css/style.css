@@ -515,6 +515,7 @@ a {
 .course-box-content {
   display: block;
   padding: 30px 20px; 
+
 height: 175px;}
 
 .courses_icon {
@@ -525,7 +526,7 @@ height: 175px;}
   height: 43px;
   right: 0;
   width: 43px;
-  background: #665c7c;
+  background: #F2A922;
   border-radius: 50%;
   padding: 8px 11px 8px 13px;
   margin: -23px 10px 0 0;
@@ -573,7 +574,7 @@ height: 175px;}
   -o-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
-  background: rgba(203, 181, 139, 0.82);
+  background: rgba(25, 145, 203, 0.80);
   width: 100%;
   position: absolute;
   top: 0;
@@ -1116,7 +1117,7 @@ footer {
 
 .btn-warning:hover {
   border: none;
-  background: #bfa97f; }
+  background: #F2A922; }
 
 .foot-logo {
   padding: 60px 0 34px; }
