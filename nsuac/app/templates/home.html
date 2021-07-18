@@ -6,6 +6,7 @@
 <section>
 
     <div class="slider_img">
+        
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -14,13 +15,14 @@
                 <li data-target="#carousel" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-
+                
                 <div class="carousel-item active">
                     <img class="d-block" src="{% static 'images/up-coming.jpg' %}" alt="First slide">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
-                            <h1>BBS'21</h1>
-                            <h4>Proactively utilize open-source users for process-centric total linkage.<br> Energistically reinvent web-enabled initiatives with premium <br>processes. Proactively drive.</h4>
+                           
+                            <h1>{{ slider.slide_title }}</h1>
+                            <p>{{ slider.slide_details }}</p>
                             <div class="slider-btn">
                                 <a href="#" class="btn btn-default">Up Coming Events</a>
                             </div>
@@ -79,6 +81,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        
     </div>
 
 </section>
