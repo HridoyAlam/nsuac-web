@@ -17,7 +17,8 @@
             <div class="carousel-inner" role="listbox">
                 
                 <div class="carousel-item active">
-                    <img class="d-block" src="{% static 'images/up-coming.jpg' %}" alt="First slide">
+                    <!-- {% static 'images/up-coming.jpg' %} -->
+                    <img class="d-block" src="{{ slider.slide_image.url }}" alt="First slide">
                     <div class="carousel-caption d-md-block">
                         <div class="slider_title">
                            
