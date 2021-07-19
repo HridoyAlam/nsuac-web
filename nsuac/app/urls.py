@@ -6,15 +6,19 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('about.html', views.about, name="about"),
     path('contact.html', views.contact, name="contact"),
+    path('faq.html', views.faq, name="faq"),
+    path('gallery.html', views.gallery, name="gallery"),
+
     path('eb.html', views.eb, name="eb"),
     path('subeb.html', views.subeb, name="subeb"),
     path('hallOfFame.html', views.hallOfFame, name="hallOfFame"),
-    path('all_events', views.all_events, name="all_events"),
     path('faculty_advisor', views.faculty_advisor, name= "faculty_advisor"),
+
+    path('all_events', views.all_events, name="all_events"),
     path('club_life', views.club_life, name='club_life'),
     path('update', views.update, name='update'),
+    
     path('nfl', views.nfl, name='nfl'),
-
     path('ncl', views.ncl, name='ncl'),
     path('batch_cricket', views.batch_cricket, name='batch_cricket'),
     path('batch_football', views.batch_football, name='batch_football'),

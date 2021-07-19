@@ -17,8 +17,19 @@ def home(request):
 def about(request):
     return render(request, 'about.html', {})
 
+
+
+def faq(request):
+    return render(request, 'faq.html', {})
+
+
 def contact(request):
     return render(request, 'contact.html', {})
+
+
+def gallery(request):
+    return render(request, 'gallery.html', {})
+
 
 def eb(request):
     return render(request, 'eb.html', {})
