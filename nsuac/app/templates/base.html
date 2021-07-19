@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
     <!-- Main CSS -->
     <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    <link href="{% static 'css/hridoy.css'%}" rel="stylesheet">
 </head>
 
 <body>
@@ -127,6 +128,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="{% url 'faculty_advisor' %}">Faculty Advisor</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'faq' %}">FAQ</a></li>
                                         <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                                         <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
                                         <li><a class="dropdown-item" href="index-landing-page.html">Landing Page</a></li>
@@ -223,6 +225,7 @@
                             <li><a href="{% url 'update' %}">Update </a></li>
                             <li><a href="admission.html">Events</a></li>
                             <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'faq' %}">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
