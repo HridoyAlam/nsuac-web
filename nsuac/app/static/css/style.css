@@ -745,8 +745,8 @@ height: 110px;}
    DETAILED CHART
    ============================================================== */
 .detailed_chart {
- /* background: url(../images/chart_bg.jpg) no-repeat;*/
- background-color: lavender;
+  background: url(../images/chart_bg.jpg) no-repeat;
+ /*background-image: linear-gradient(to bottom, #0a2345, #091f3b, #081a32, #071629, #051020);*/
   -webkit-background-size: cover;
   background-size: cover;
   padding: 97px 0; }
