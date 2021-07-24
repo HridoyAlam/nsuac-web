@@ -511,20 +511,20 @@ a {
 .course-img-wrap {
   position: relative; 
 
-  height: 245px;}
+  height: 170px;}
 
 .course-box-content {
   display: block;
   padding: 30px 20px; 
 
-height: 175px;}
+height: 100px;}
 
 @media (max-width: 991px) {
   .course-img-wrap {
-  height: 400px;}
+  height: 230px;}
 
 .course-box-content {
-height: 110px;}
+height: 80px;}
 
 }
 
