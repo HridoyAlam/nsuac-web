@@ -45,6 +45,7 @@ Author:
 /* ==============================================================
    NAV
    ============================================================== */
+
 .nav-menu {
   position: absolute;
   z-index: 1;
@@ -254,12 +255,17 @@ Author:
 /* ==============================================================
    GLOBAL STYLES
    ============================================================== */
+@font-face{
+  font-family: knucklehead;
+  src: url("% static 'fonts/knucklehead/Knucklehead.woff'%");
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font-family: "Lora", serif; }
+  font-family: knucklehead,"Lora", serif; }
 
 h1 {
   font-size: 54px; }
@@ -3706,3 +3712,4 @@ div.panel {
     background-image: linear-gradient(to bottom, #0a2345, #091f3b, #081a32, #071629, #051020);
     background-repeat: no-repeat;
 }
+
