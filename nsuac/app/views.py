@@ -54,34 +54,34 @@ def update(request):
 
 ### outdoor events
 
-def nfl(request):
-    return render(request, 'nfl.html', {})
+def event_nfl(request):
+    return render(request, 'event_nfl.html', {})
 
-def ncl(request):
-    return render(request, 'ncl.html', {})
+def event_ncl(request):
+    return render(request, 'event_ncl.html', {})
 
-def batch_cricket(request):
-    return render(request, 'batch_cricket.html', {})
+def event_batch_cricket(request):
+    return render(request, 'event_batch_cricket.html', {})
 
-def batch_football(request):
-    return render(request, 'batch_football.html', {})
+def event_batch_football(request):
+    return render(request, 'event_batch_football.html', {})
 
-def tryouts(request):
-    return render(request, 'tryouts.html', {})
+def event_tryouts(request):
+    return render(request, 'event_tryouts.html', {})
 
 ### indoor events
 
-def chess_carrom(request):
-    return render(request, 'chess_carrom.html', {})
+def event_chess_carrom(request):
+    return render(request, 'event_chess_carrom.html', {})
 
-def shuttle_master(request):
-    return render(request, 'shuttle_master.html', {})
+def event_shuttle_master(request):
+    return render(request, 'event_shuttle_master.html', {})
 
-def basketball(request):
-    return render(request, 'basketball.html', {})
+def event_basketball(request):
+    return render(request, 'event_basketball.html', {})
 
-def table_tennis(request):
-    return render(request, 'table_tennis.html', {})
+def event_table_tennis(request):
+    return render(request, 'event_table_tennis.html', {})
 
-def fff(request):
-    return render(request, 'fff.html', {})
+def event_fff(request):
+    return render(request, 'event_fff.html', {})

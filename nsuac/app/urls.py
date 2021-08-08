@@ -18,15 +18,15 @@ urlpatterns = [
     path('club_life', views.club_life, name='club_life'),
     path('update', views.update, name='update'),
     
-    path('nfl', views.nfl, name='nfl'),
-    path('ncl', views.ncl, name='ncl'),
-    path('batch_cricket', views.batch_cricket, name='batch_cricket'),
-    path('batch_football', views.batch_football, name='batch_football'),
-    path('tryouts', views.tryouts, name='tryouts'),
+    path('event_nfl', views.event_nfl, name='event_nfl'),
+    path('event_ncl', views.event_ncl, name='event_ncl'),
+    path('event_batch_cricket', views.event_batch_cricket, name='event_batch_cricket'),
+    path('event_batch_football', views.event_batch_football, name='event_batch_football'),
+    path('event_tryouts', views.event_tryouts, name='event_tryouts'),
 
-    path('chess_carrom', views.chess_carrom, name='chess_carrom'),
-    path('shuttle_master', views.shuttle_master, name='shuttle_master'),
-    path('basketball', views.basketball, name='basketball'),
-    path('table_tennis', views.table_tennis, name='table_tennis'),
-    path('fff', views.fff, name='fff')
+    path('event_chess_carrom', views.event_chess_carrom, name='event_chess_carrom'),
+    path('event_shuttle_master', views.event_shuttle_master, name='event_shuttle_master'),
+    path('event_basketball', views.event_basketball, name='event_basketball'),
+    path('event_table_tennis', views.event_table_tennis, name='event_table_tennis'),
+    path('event_fff', views.event_fff, name='event_fff')
 ]
