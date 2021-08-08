@@ -757,7 +757,7 @@ height: 80px;}
   margin-bottom: 2vw;
 }
 .sponsor_logo{
-  width: 20%;
+  width: 25%;
   height:20%;
 }
 .sponsor_logo img{
@@ -1268,25 +1268,25 @@ footer h3 {
   footer h3 {
     font-size: 18px; }
   .fa-fb {
-    width: 44px;
-    height: 44px;
-    padding: 15px 17px; }
+    width: 40px;
+    height: 40px;
+    padding: 13px 13px; }
   .fa-in {
-    width: 44px;
-    height: 44px;
-    padding: 14px 16px; }
+    width: 40px;
+    height: 40px;
+    padding: 13px 13px; }
   .fa-tw {
-    width: 44px;
-    height: 44px;
-    padding: 14px 16px; } 
+    width: 40px;
+    height: 40px;
+    padding: 13px 13px; } 
   .fa-ins {
-    width: 44px;
-    height: 44px;
-    padding: 14px 16px; }
+width: 40px;
+    height: 40px;
+    padding: 13px 13px; }
   .fa-yt {
-    width: 44px;
-    height: 44px;
-    padding: 14px 16px; }
+width: 40px;
+    height: 40px;
+    padding: 13px 13px; }
   }
 
 @media (max-width: 767px) {
@@ -3700,3 +3700,8 @@ div.panel {
 
 /*# sourceMappingURL=style.css.map */
 /*sponsors */
+.partners_tab{
+    
+    background-image: linear-gradient(to bottom, #0a2345, #091f3b, #081a32, #071629, #051020);
+    background-repeat: no-repeat;
+}
