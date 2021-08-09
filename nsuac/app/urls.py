@@ -28,5 +28,11 @@ urlpatterns = [
     path('event_shuttle_master', views.event_shuttle_master, name='event_shuttle_master'),
     path('event_basketball', views.event_basketball, name='event_basketball'),
     path('event_table_tennis', views.event_table_tennis, name='event_table_tennis'),
-    path('event_fff', views.event_fff, name='event_fff')
+    path('event_fff', views.event_fff, name='event_fff'),
+
+
+    path('activity_one', views.activity_one, name='activity_one'),
+    path('activity_two', views.activity_two, name='activity_two'),
+    path('activity_three', views.activity_three, name='activity_three'),
+    path('activity_four', views.activity_four, name='activity_four'),
 ]

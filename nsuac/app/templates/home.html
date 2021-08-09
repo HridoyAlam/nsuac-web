@@ -104,7 +104,7 @@
     </div>
 </section>
 <!--//END ABOUT -->
-<!--============================= OUR Events =============================-->
+<!--============================= OUR Activities =============================-->
 <section class="our_courses">
     <div class="container">
         <div class="row">
@@ -120,17 +120,18 @@
                         <img src="{% static 'images/Activities/internalCricket191.jpg' %}" class="img-fluid" alt="Internals">
                         <div class="courses_box-img">
                             <div class="courses-link-wrap">
-                                <a href="www.nsusportscarnival.com/" class="course-link"><span>Activity Details </span></a>
+                                <a href="{% url 'activity_one' %}" class="course-link"><span>Activity Details </span></a>
 
                             </div>
                             <!-- // end .courses-link-wrap -->
                         </div>
                     </div>
+                    
                     <!-- // end .course-img-wrap -->
                     <div class="courses_icon">
                         <img src="{% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
                     </div>
-                    <a href="course-detail.html" class="course-box-content">
+                    <a href="{% url 'activity_one' %}" class="course-box-content">
                         <h3>Internal Tournements</h3>
                         <p class="event_details_p"></p>
                     </a>
@@ -143,7 +144,7 @@
                         <img src="{% static 'images//Activities/orientationBooth191.jpg' %}" class="img-fluid" alt="booths">
                         <div class="courses_box-img">
                             <div class="courses-link-wrap">
-                                <a href="course-detail.html" class="course-link"><span>Activity Details </span></a>
+                                <a href="{% url 'activity_two' %}" class="course-link"><span>Activity Details </span></a>
 
                             </div>
                             <!-- // end .courses-link-wrap -->
@@ -154,7 +155,7 @@
 
                         <img src=" {% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
                     </div>
-                    <a href="course-detail.html" class="course-box-content">
+                    <a href="{% url 'activity_two' %}" class="course-box-content">
                         <h3>Booths</h3>
                         <p class="event_details_p"></p>
                     </a>
@@ -167,7 +168,7 @@
                         <img src="{% static 'images//Activities/oneDayTour2019.JPG' %}" class="img-fluid" alt="One Day Tours">
                         <div class="courses_box-img">
                             <div class="courses-link-wrap">
-                                <a href="course-detail.html" class="course-link"><span>Activity Details </span></a>
+                                <a href="{% url 'activity_three' %}" class="course-link"><span>Activity Details </span></a>
 
                             </div>
                             <!-- // end .courses-link-wrap -->
@@ -178,7 +179,7 @@
 
                         <img src="{% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
                     </div>
-                    <a href="course-detail.html" class="course-box-content">
+                    <a href="{% url 'activity_three' %}" class="course-box-content">
                         <h3>One Day Tours</h3>
                         <p class="event_details_p"></p>
                     </a>
@@ -191,7 +192,7 @@
                         <img src="{% static 'images//Activities/iftarParty2019.jpg' %}" class="img-fluid" alt="Iftar Party">
                         <div class="courses_box-img">
                             <div class="courses-link-wrap">
-                                <a href="course-detail.html" class="course-link"><span>Activity Details </span></a>
+                                <a href="{% url 'activity_four' %}" class="course-link"><span>Activity Details </span></a>
 
                             </div>
                             <!-- // end .courses-link-wrap -->
@@ -202,7 +203,7 @@
 
                         <img src=" {% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
                     </div>
-                    <a href="course-detail.html" class="course-box-content">
+                    <a href="{% url 'activity_four' %}" class="course-box-content">
                         <h3>Iftar Party</h3>
                         <p class="event_details_p"></p>
                     </a>
@@ -211,7 +212,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <a href="{% url 'all_events' %}" class="btn btn-default btn-courses">View all Activities</a>
+                <a href="#" class="btn btn-default btn-courses">View all Activities</a>
             </div>
         </div>
     </div>
@@ -471,7 +472,7 @@
 
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo">
-                    <a href="https://acimotors-bd.com/products/automobiles/yamaha"><img src="{% static 'images/Sponsors/Yamaha.png'%}" alt=""></a>
+                    <a href="https://acimotors-bd.com/products/automobiles/yamaha"><img src="{% static 'images/Sponsors/Yamaha.png' %}" alt="">yamaha</a>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo">

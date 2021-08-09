@@ -85,3 +85,16 @@ def event_table_tennis(request):
 
 def event_fff(request):
     return render(request, 'event_fff.html', {})
+
+
+def activity_one(request):
+    return render(request, 'activity_one.html', {})
+
+def activity_two(request):
+    return render(request, 'activity_two.html', {})
+
+def activity_three(request):
+    return render(request, 'activity_three.html', {})
+
+def activity_four(request):
+    return render(request, 'activity_four.html', {})
