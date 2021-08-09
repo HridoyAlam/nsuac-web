@@ -45,7 +45,6 @@ Author:
 /* ==============================================================
    NAV
    ============================================================== */
-
 .nav-menu {
   position: absolute;
   z-index: 1;
@@ -255,17 +254,12 @@ Author:
 /* ==============================================================
    GLOBAL STYLES
    ============================================================== */
-@font-face{
-  font-family: knucklehead;
-  src: url("% static 'fonts/knucklehead/Knucklehead.woff'%");
-}
-
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font-family: 'Josefin Sans','Bebas Neue', serif; }
+  font-family: "Lora", serif; }
 
 h1 {
   font-size: 54px; }
@@ -404,7 +398,8 @@ a {
    ============================================================== */
 .about {
   padding: 97px 0 56px;
-  background: #fff; }
+  background: #9fc3e4; 
+}
   .about h2 {
     text-align: center;
     color: #2d2d2d;
@@ -422,7 +417,7 @@ a {
    OUR COURSES
    ============================================================== */
 .our_courses {
-  background: #f2f2f2;
+  background: #8ab1d6;
   padding: 97px 0; }
   .our_courses h2 {
     font-weight: 700;
@@ -631,7 +626,8 @@ height: 80px;}
    ============================================================== */
 .event {
   padding: 97px 0;
-  background: #fff; }
+  background: #9fc3e4; 
+}
   .event h2 {
     font-weight: 600;
     margin: 0 0 28px; }
@@ -834,7 +830,7 @@ text-align: center;
    OUR BLOG
    ============================================================== */
 .blog {
-  background: #f2f2f2;
+  background: #8ab1d6;
   padding: 97px 0; }
   .blog h2 {
     text-align: center;
@@ -3712,4 +3708,3 @@ div.panel {
     background-image: linear-gradient(to bottom, #0a2345, #091f3b, #081a32, #071629, #051020);
     background-repeat: no-repeat;
 }
-
