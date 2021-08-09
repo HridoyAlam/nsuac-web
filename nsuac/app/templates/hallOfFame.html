@@ -2,48 +2,48 @@
 {% block body %}
 {% load static %}
 <style>
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #1991CB;
+    }
 
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #1991CB;
-}
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #F29020;
+    }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #F2A922;
+    }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #F29020;
-}
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #F2A922;
-}
+    h3 {
+        text-align: center;
+        padding: 5px;
+    }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-h3{
-	text-align: center;
-	padding: 5px;
-}
 </style>
 <div class="container">
     <div class="row">
@@ -85,7 +85,34 @@ h3{
             </div>
             <div id="2013-14" class="tabcontent">
                 <h3>2013-14</h3>
-                <p></p>
+                <p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>Newaz Noor-Ul Wahab</td>
+                        <td>President</td>
+                    </tr>
+                    <tr>
+                        <td>Ahmed Faisal</td>
+                        <td>General Secretary</td>
+                    </tr>
+                    <tr>
+                        <td>Syed Omar Sakif</td>
+                        <td>Vice-President</td>
+                    </tr>
+                    <tr>
+                        <td>Rayhan Mahmud</td>
+                        <td>Vice-President</td>
+                    </tr>
+                    <tr>
+                        <td>Rahinul Islam Mridul</td>
+                        <td>Treasurer</td>
+                    </tr>
+                    <tr>
+                        <td>Kowshiqur Rahman</td>
+                        <td>Head of Sub-EB</td>
+                    </tr>
+                </table>
+                </p>
                 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnsuathleticsclub%2Fposts%2F3442110979175539&show_text=false&width=500" width="500" height="421" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
 
@@ -98,7 +125,8 @@ h3{
 </div>
 
 <script>
-	document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click();
+
     function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
