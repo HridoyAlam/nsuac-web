@@ -73,7 +73,9 @@
                         </button>
 
                         <a href="{% url 'home' %}" class="navbar-brand nav-brand2">
-                            <h2><b>NSUAC</b></h2>
+                            <h2 style="color: white;">
+                                <img style="width: 36px;" src="{% static 'images/ac.png' %}" alt="">
+                                <b>NSUAC</b></h2>
                         </a>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
@@ -139,7 +141,7 @@
                                         <li><a class="dropdown-item" href="#">Blog Post</a></li>
                                         <li><a class="dropdown-item" href="#">Landing Page</a></li>
                                         <li><a class="dropdown-item" href="{% url 'club_life' %}">Club Life</a></li>
-                                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a></li>
                                         <li><a class="dropdown-item" href="#">Shortcodes</a></li>
 
                                         <li class="dropdown">
