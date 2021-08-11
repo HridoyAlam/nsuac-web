@@ -259,7 +259,9 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif; 
+  background: #dde8f1;
+}
 
 h1 {
   font-size: 54px; }
@@ -1337,7 +1339,9 @@ width: 40px;
    ABOUT WELCOME
    ============================================================== */
 .welcome_about {
-  padding: 98px 0; }
+  padding: 98px 0; 
+  background: #9fc3e4;
+}
   .welcome_about h2 {
     font-weight: 600;
     color: #2d2d2d;
@@ -1367,8 +1371,10 @@ width: 40px;
    ABOUT TESTIMONIAL
    ============================================================== */
 .testimonial {
-  background: #f2f2f2;
-  padding: 98px 0; }
+  background: #8ab1d6;
+  padding: 98px 0; 
+
+}
   .testimonial h2 {
     text-align: center;
     font-weight: 600;
