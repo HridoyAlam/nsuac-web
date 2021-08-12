@@ -98,3 +98,24 @@ def activity_three(request):
 
 def activity_four(request):
     return render(request, 'activity_four.html', {})
+
+
+# teams 
+def team_cricket(request):
+    return render(request, 'team_cricket.html', {})
+
+
+def team_badminton(request):
+    return render(request, 'team_badminton.html', {})
+
+
+def team_basketball(request):
+    return render(request, 'team_basketball.html', {})
+
+
+def team_football(request):
+    return render(request, 'team_football.html', {})
+
+
+def team_table_tennis(request):
+    return render(request, 'team_table_tennis.html', {})

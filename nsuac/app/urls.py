@@ -35,4 +35,11 @@ urlpatterns = [
     path('activity_two', views.activity_two, name='activity_two'),
     path('activity_three', views.activity_three, name='activity_three'),
     path('activity_four', views.activity_four, name='activity_four'),
+
+    #teams
+    path('team_badminton', views.team_badminton, name='team_badminton'),
+    path('team_cricket', views.team_cricket, name= 'team_cricket'),
+    path('team_basketball', views.team_basketball, name='team_basketball'),
+    path('team_football', views.team_football, name='team_football'),
+    path('team_table_tennis', views.team_table_tennis, name='team_table_tennis'),
 ]
