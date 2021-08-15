@@ -45,6 +45,7 @@ Author:
 /* ==============================================================
    NAV
    ============================================================== */
+   
 .nav-menu {
   position: absolute;
   z-index: 1;
@@ -1345,10 +1346,13 @@ width: 40px;
   .welcome_about h2 {
     font-weight: 600;
     color: #2d2d2d;
-    margin: 0 0 28px; }
+    margin: 0 0 28px; 
+  }
   .welcome_about p {
     color: #2d2d2d;
-    line-height: 1.8; }
+    line-height: 1.8;
+    text-align: justify; 
+  }
   .welcome_about img {
     width: 100%; }
 
