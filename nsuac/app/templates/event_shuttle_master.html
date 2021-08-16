@@ -1,6 +1,20 @@
 {% extends 'base.html' %}
 {%  block body %}
 {% load static %}
-    <h6 style="text-align: center;">Shuttle Master </h6>
-    
+<style>
+    h2{
+        text-align: center;
+    }
+    .coming_soon_img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+</style>
+    <h2> Shuttle Master </h2>
+
+    <div class="container coming_soon_img">
+        <img src="{% static 'images/others/coming_s.jpg' %}" alt="">
+    </div>
 {% endblock %}
