@@ -39,10 +39,11 @@
         border-top: none;
     }
 
-    h3 {
+    h3,h1 {
         text-align: center;
         padding: 5px;
     }
+    
 
 </style>
 <div class="container">
@@ -72,7 +73,7 @@
 
             <div id="Rules" class="tabcontent">
                 <h3>Rules</h3>
-                <p></p>
+                {% include 'events/nfl/nfl_rules.html' %}
             </div>
 
             <div id="Winners" class="tabcontent">
