@@ -38,16 +38,13 @@
         border: 1px solid #ccc;
         border-top: none;
     }
-
     h3 {
         text-align: center;
         padding: 5px;
     }
-
     th {
         text-align: center;
     }
-
 </style>
 <div class="container">
     <div class="row">
@@ -81,67 +78,7 @@
             </div>
 
             <div id="Winners" class="tabcontent">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Winners</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <h3>Season 2019</h3>
-                        </div>
-                        <div class="col-md-7 col-xs-12">
-                            <h5>Champion</h5>
-                            <img src="">
-                            <h6>NSU Pharmaceutical Club</h6>
-
-                        </div>
-                        <div class="col-md-5 col-xs-12">
-                            <h5>Runners Up</h5>
-                            <img src="">
-                            <h6>NSU Sangskritik Sangathan</h6>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <h3>Season 2018</h3>
-                        </div>
-                        <div class="col-md-7 col-xs-12">
-                            <h5>Champion</h5>
-                            <img src="">
-                            <h6>NSU Athletics Club</h6>
-
-                        </div>
-                        <div class="col-md-5 col-xs-12">
-                            <h5>Runners Up</h5>
-                            <img src="">
-                            <h6>NSU Social Service Club</h6>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <h3>Season 2016</h3>
-                        </div>
-                        <div class="col-md-7 col-xs-12">
-                            <h5>Champion</h5>
-                            <img src="">
-                            <h6>NSU Social Service</h6>
-
-                        </div>
-                        <div class="col-md-5 col-xs-12">
-                            <h5>Runners Up</h5>
-                            <img src="">
-                            <h6>NSU Diversity Club</h6>
-
-                        </div>
-                    </div>
-                </div>
+                    {% include 'events/ncl/ncl_winners.html' %}
             </div>
         </div>
     </div>
