@@ -43,8 +43,6 @@
         text-align: center;
         padding: 5px;
     }
-    
-
 </style>
 <div class="container">
     <div class="row">
@@ -60,10 +58,11 @@
                 <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
                 <button class="tablinks" onclick="openCity(event, 'Rules')">Rules</button>
                 <button class="tablinks" onclick="openCity(event, 'Winners')">Winners</button>
-                <button class="tablinks" onclick="openCity(event, 'Season2012')">Season2012</button>
-                <button class="tablinks" onclick="openCity(event, 'Season2016')">Season2016</button>
-                <button class="tablinks" onclick="openCity(event, 'Season2017')">Season2017</button>
-                <button class="tablinks" onclick="openCity(event, 'Season2019')">Season2019</button>
+                <button class="tablinks" onclick="openCity(event, 'Season2019')">Season 2019</button>
+                <button class="tablinks" onclick="openCity(event, 'Season2017')">Season 2017</button>
+                <button class="tablinks" onclick="openCity(event, 'Season2016')">Season 2016</button>
+                <button class="tablinks" onclick="openCity(event, 'Season2013')">Season2013</button>
+                <button class="tablinks" onclick="openCity(event, 'Season2012')">Season 2012</button>
             </div>
 
             <div id="Overview" class="tabcontent">
@@ -77,27 +76,28 @@
             </div>
 
             <div id="Winners" class="tabcontent">
-                <h3>Winners</h3>
-                <p></p>
+            {% include 'events/nfl/nfl_winners.html' %}
             </div>
 
-            <div id="Season2012" class="tabcontent">
-                <h3>Season 2012</h3>
-                <p></p>
+            <div id="Season2019" class="tabcontent">
+            {% include 'events/nfl/nfl_season_19.html' %}
 
-            </div>
-            <div id="Season2016" class="tabcontent">
-                <h3>Season 2016</h3>
-                <p></p>
             </div>
             <div id="Season2017" class="tabcontent">
                 <h3>Season 2017</h3>
                 <p></p>
             </div>
-            <div id="Season2019" class="tabcontent">
-                <h3>Season 2019</h3>
+            <div id="Season2016" class="tabcontent">
+                <h3>Season 2016</h3>
                 <p></p>
-
+            </div>
+            <div id="Season2013" class="tabcontent">
+                <h3>Season 2013</h3>
+                <p></p>
+            </div>
+            <div id="Season2012" class="tabcontent">
+                <h3>Season 2012</h3>
+                <p></p>
             </div>
         </div>
     </div>

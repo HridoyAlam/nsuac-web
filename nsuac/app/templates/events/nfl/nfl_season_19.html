@@ -1,6 +1,50 @@
 {% load static %}
+<style type="text/css">
+</style>
+
 <div class="container">
-	
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{% static 'images/events/nfl/NFL2019banner.jpg' %}" alt="Banner" width="100%">
+        </div>
+
+        <div class="col-md-12">
+            <p style="text-align:justify;">ShareTrip presents NSU Football League (NFL) 2019 organized by NSU Athletics Club
+                North South University Athletics Club (NSUAC) is the only club in NSU that maneuvers all the sports based events of NSU. Annually NSUAC organizes seven events on a regular basis. NSU Football League (NFL) 2019 is one of the main event of those seven. This is an intra NSU football tournament. In NFL all the clubs of NSU participates. There are two segments in the tournament, i.e. male segment and female segment. Both the segments of NFL 2019 football tournament will proceed through the Round Robin System. And at last one champion team will come out from each segment. There are four stages in the tournament for each segment. <br>
+                Group Stage – Male & Female
+                All the clubs of NSU will be divided into four groups. Then the teams will face each other with in the groups. Through points distribution and goal difference in the points table the team standings will be decided with in the groups. The group champions and the group runner-ups will proceed to the next round, i.e. the quarter finals. This process will be followed in both male and female segments. <br>
+                Quarter Finals – Male & Female
+                The group champions and the group runner-ups from the four groups will play in the quarter finals. Each team will play one knockout match. The group champions from each group will face one of the group runner-ups from another group. So 8 teams will play 4 matches. The four winners will proceed to the semi-finals. This process will be followed in both male and female segments. <br>
+                Semi- Finals – Male & Female
+                The 4 winning teams of the four quarter finals will play in the semi-finals. There will be two semi-final matches. Each team of the 4 will play one match. The winning teams of the semi-finals will qualify for the final match. This process will be followed in both male and female segments. <br>
+                Finals – Male & Female
+                The 2 winning teams of the semi-finals will face each other in the final match. The winner of the final match will be regarded as the Champion of NFL 2019. This process will be followed in both male and female segments. <br>
+                The tournament is full of thrill, intensity and hunger for the glory of football in NSU. We hope to see you all at ShareTrip presents NSU Football League (NFL) 2019 organized by NSU Athletics Club from August 01, 2019 at APBN Field, Uttara and NSU Playground.</p>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'male')" style=" width: 50%;" id="defaultOpen">Male Segment</button>
+                <button class="tablinks" onclick="openCity(event, 'female')" style="width: 50%;">Female Segment</button>
+            </div>
+
+            <div id="Male" class="tabcontent">
+                <h3>Male Segment</h3>
+                
+            </div>
+
+            <div id="female" class="tabcontent">
+                <h3>Female Segment</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 </div>
 {% block body %}
 {% endblock %}
