@@ -25,6 +25,13 @@ def about(request):
 def faq(request):
     return render(request, 'faq.html', {})
 
+def subscribers(request):
+    if request.method == 'POST':
+        subscriber_email = request.POST['subscriber_email']
+
+        ins = Subscribers(subscriber_email = subscriber_email)
+        ins.save()
+    pass
 
 def contact(request):
     if request.method == 'POST':
@@ -140,3 +147,7 @@ def team_football(request):
 
 def team_table_tennis(request):
     return render(request, 'team_table_tennis.html', {})
+
+
+def messages_from(request):
+    return render(request, 'messages_from.html',{})

@@ -137,7 +137,7 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="{% url 'faculty_advisor' %}">Faculty Advisor</a></li>
                                         <li><a class="dropdown-item" href="{% url 'faq' %}">FAQ</a></li>
-                                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'messages_from' %}">Messages</a></li>
                                         <li><a class="dropdown-item" href="#">Blog Post</a></li>
                                         <li><a class="dropdown-item" href="#">Landing Page</a></li>
                                         <li><a class="dropdown-item" href="{% url 'club_life' %}">Club Life</a></li>
@@ -219,8 +219,9 @@
                 <div class="col-md-12">
                     <div class="subscribe">
                         <h3>Newsletter</h3>
-                        <form id="subscribeform" action="php/subscribe.php" method="post">
-                            <input class="signup_form" type="text" name="email" placeholder="Enter Your Email Address">
+                        <form id="subscribeform" action="{% url 'home' %}" method="post">
+                            {% csrf_token %}
+                            <input class="signup_form" type="text" name="subscriber_email" placeholder="Enter Your Email Address">
                             <button type="submit" class="btn btn-warning" id="js-subscribe-btn">SUBSCRIBE</button>
                             <div id="js-subscribe-result" data-success-msg="Success, Please check your email." data-error-msg="Oops! Something went wrong"></div>
                             <!-- // end #js-subscribe-result -->
@@ -246,7 +247,7 @@
                         <ul>
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'update' %}">Update </a></li>
-                            <li><a href="admission.html">Events</a></li>
+                            <li><a href="{% url 'all_events' %}">Events</a></li>
                             <li><a href="{% url 'contact' %}">Contact</a></li>
                             <li><a href="{% url 'faq' %}">FAQ</a></li>
                         </ul>

@@ -42,4 +42,5 @@ urlpatterns = [
     path('team_basketball', views.team_basketball, name='team_basketball'),
     path('team_football', views.team_football, name='team_football'),
     path('team_table_tennis', views.team_table_tennis, name='team_table_tennis'),
+    path('messages_from', views.messages_from, name='messages_from'),
 ]
