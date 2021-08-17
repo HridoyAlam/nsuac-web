@@ -1,9 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .models import Slider,Upcoming_event
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
+from django.core.mail import message, send_mail, BadHeaderError
+from .forms import contact_form
 
 # Create your views here.
 def home(request):
@@ -24,8 +26,23 @@ def faq(request):
 
 
 def contact(request):
-    return render(request, 'contact.html', {})
+    if request.method == 'POST':
+        message_name = request.POST['message_name']
+        message_email = request.POST['message_email']
+        phone = request.POST['phone']
+        message = request.POST['message']
+        
+        send_mail(
+            'Thank you' + message_name,
+            message,
+            message_email, #from email
+            ['athletics.club@northsouth.edu'] #to email address
 
+        )
+        return render(request, 'contact.html', {'message_name':message_name})
+
+    else:
+        return render(request,'contact.html',{})
 
 def gallery(request):
     return render(request, 'gallery.html', {})

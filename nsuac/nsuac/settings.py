@@ -129,3 +129,18 @@ MEDIA_URL = "/media/"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+#### for mail
+# myaccount.google.com/apppasswords
+# accounts.google.com/DisplayUnlockCaptcha
+# myaccount.google.com/lesssecureapps
+### Email Settings Start ###
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587 # it needs to be different from 8080(Test server)
+EMAIL_HOST_USER = 'athletics.club@northsouth.edu' # dentist email address
+EMAIL_HOST_PASSWORD = 'nsuac105best'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'hridoy@example.com'
