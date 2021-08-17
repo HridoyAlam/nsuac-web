@@ -1,11 +1,12 @@
 from django.shortcuts import redirect, render
-from .models import Slider,Upcoming_event
+from .models import Slider,Upcoming_event, Subscribers, Contacts
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from django.core.mail import message, send_mail, BadHeaderError
 from .forms import contact_form
+from app.models import Contacts
 
 # Create your views here.
 def home(request):
@@ -31,6 +32,9 @@ def contact(request):
         message_email = request.POST['message_email']
         phone = request.POST['phone']
         message = request.POST['message']
+
+        ins = Contacts(message_name = message_name, message_email = message_email, phone = phone, message = message)
+        ins.save()
         
         send_mail(
             'Thank you' + message_name,

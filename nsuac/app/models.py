@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.contrib import admin
 # Create your models here.
@@ -19,3 +20,24 @@ class Upcoming_event(models.Model):
 
     def __str__(self) -> str:
         return self.up_event_title
+
+
+## news later subscription
+class Subscribers(models.Model):
+    
+    subscriber_email = models.EmailField(unique=True)
+
+    def __str__(self):
+        return self.subscriber_email
+
+class Contacts(models.Model):
+    message_name = models.CharField(max_length=30)
+    message_email = models.EmailField()
+    phone =  models.CharField(max_length=11)
+    message = models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.message_name
+
+#python manage.py makemigrations
+#python manage.py migrate
