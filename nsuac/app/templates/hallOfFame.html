@@ -7,13 +7,15 @@
         border: 0px solid #1991CB;
         justify-content: center;
         align-items: center;
-        margin: 10px 0px;
-        box-shadow: 0px -1px 13px -3px #1991CB;
+        max-width: 20% !important;  
+        margin: 2.5%;
+        box-shadow: 0px -1px 30px -3px #1991CB;
         border-radius: 20px;
     }
 
     .alumni img {
         width: 100%;
+        padding: 10px 0px;
     }
 
     /* Style the tab */
@@ -74,6 +76,8 @@
                 <button class="tablinks" onclick="openCity(event, '2014-16')">2014-16</button>
                 <button class="tablinks" onclick="openCity(event, '2013-14')">2013-14</button>
                 <button class="tablinks" onclick="openCity(event, '2012-13')">2012-13</button>
+                <button class="tablinks" onclick="openCity(event, '2010-11')">2010-11</button>
+                <button class="tablinks" onclick="openCity(event, '2008-10')">2008-10</button>
             </div>
 
             <div id="2019-20" class="tabcontent">
@@ -94,6 +98,13 @@
             <div id="2012-13" class="tabcontent">
                 {% include 'members/panel_12_13.html' %}
             </div>
+            <div id="2012-13" class="tabcontent">
+                {% include 'members/panel_10_11.html' %}
+            </div>
+            <div id="2012-13" class="tabcontent">
+                {% include 'members/panel_08_10.html' %}
+            </div>
+
         </div>
     </div>
 </div>
