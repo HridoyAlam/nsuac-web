@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-from .models import Slider,Upcoming_event, Subscribers, Contacts
+from .models import Gallery, Slider,Upcoming_event, Subscribers, Contacts
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
@@ -56,7 +56,9 @@ def contact(request):
         return render(request,'contact.html',{})
 
 def gallery(request):
-    return render(request, 'gallery.html', {})
+    images = Gallery.objects.all()
+    context = {'images':images}
+    return render(request, 'gallery.html', context)
 
 
 def eb(request):

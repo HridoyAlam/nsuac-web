@@ -1,6 +1,7 @@
 
 from django.db import models
 from django.contrib import admin
+from django.db.models.fields import AutoField
 # Create your models here.
 class Slider(models.Model):
     slider_id = models.AutoField
@@ -39,5 +40,14 @@ class Contacts(models.Model):
     def __str__(self):
         return self.message_name
 
+
+class Gallery(models.Model):
+    class Meta:
+        verbose_name_plural = "Gallery"
+        
+    gallery_image_id = models.AutoField
+    gallery_image = models.ImageField()
+
 #python manage.py makemigrations
 #python manage.py migrate
+# python manage.py runserver
