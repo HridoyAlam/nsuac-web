@@ -48,6 +48,14 @@ class Gallery(models.Model):
     gallery_image_id = models.AutoField
     gallery_image = models.ImageField()
 
+class Badminton(models.Model):
+    bad_name = models.CharField(max_length=30)
+    bad_batch = models.IntegerField()
+    bad_image = models.ImageField()
+
+    def __str__(self):
+        return self.bad_name
+
 #python manage.py makemigrations
 #python manage.py migrate
 # python manage.py runserver

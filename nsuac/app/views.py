@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-from .models import Gallery, Slider,Upcoming_event, Subscribers, Contacts
+from .models import Badminton, Gallery, Slider,Upcoming_event, Subscribers, Contacts
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
@@ -136,7 +136,11 @@ def team_cricket(request):
 
 
 def team_badminton(request):
-    return render(request, 'team_badminton.html', {})
+    badminton = Badminton.objects.all()
+    context = {
+        'badminton':badminton
+    }
+    return render(request, 'team_badminton.html', context)
 
 
 def team_basketball(request):

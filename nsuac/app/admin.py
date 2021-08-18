@@ -7,6 +7,7 @@ admin.site.register(Slider)
 admin.site.register(Upcoming_event)
 admin.site.register(Subscribers)
 admin.site.register(Contacts)
+admin.site.register(Badminton)
 
 class GalleryAdmin(admin.ModelAdmin):
     def image_tag(self, obj):
