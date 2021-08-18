@@ -1,9 +1,12 @@
-from django.shortcuts import render
-from .models import Slider,Upcoming_event
+from django.shortcuts import redirect, render
+from .models import Slider,Upcoming_event, Subscribers, Contacts
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
+from django.core.mail import message, send_mail, BadHeaderError
+from .forms import contact_form
+from app.models import Contacts
 
 # Create your views here.
 def home(request):
@@ -22,10 +25,35 @@ def about(request):
 def faq(request):
     return render(request, 'faq.html', {})
 
+def subscribers(request):
+    if request.method == 'POST':
+        subscriber_email = request.POST['subscriber_email']
+
+        ins = Subscribers(subscriber_email = subscriber_email)
+        ins.save()
+    pass
 
 def contact(request):
-    return render(request, 'contact.html', {})
+    if request.method == 'POST':
+        message_name = request.POST['message_name']
+        message_email = request.POST['message_email']
+        phone = request.POST['phone']
+        message = request.POST['message']
 
+        ins = Contacts(message_name = message_name, message_email = message_email, phone = phone, message = message)
+        ins.save()
+        
+        send_mail(
+            'Thank you' + message_name,
+            message,
+            message_email, #from email
+            ['athletics.club@northsouth.edu'] #to email address
+
+        )
+        return render(request, 'contact.html', {'message_name':message_name})
+
+    else:
+        return render(request,'contact.html',{})
 
 def gallery(request):
     return render(request, 'gallery.html', {})
@@ -119,3 +147,7 @@ def team_football(request):
 
 def team_table_tennis(request):
     return render(request, 'team_table_tennis.html', {})
+
+
+def messages_from(request):
+    return render(request, 'messages_from.html',{})

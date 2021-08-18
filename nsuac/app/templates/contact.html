@@ -36,13 +36,16 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 contact-option">
                             <div class="contact-option_rsp">
                                 <h3>Leave a message</h3>
-                                <form action="php/contact.php" method="post" id="phpcontactform">
+                                
+                                <form action="{% url 'contact' %}" method="post" id="phpcontactform">
+                                    {% csrf_token %}
+                                    
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name" name="name" required>
+                                        <input type="text" class="form-control" placeholder="Name" name="message_name" required>
                                     </div>
                                     <!-- // end .form-group -->
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                        <input type="email" class="form-control" placeholder="Email" name="message_email" required>
                                     </div>
                                     <!-- // end .form-group -->
                                     <div class="form-group">
