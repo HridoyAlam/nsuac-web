@@ -3,9 +3,9 @@ h2,h5,h6{
     }
 
 .container .row .infoBox{
-        border: 2px solid black;
+        border: 1px solid rgb(114 113 113);
         max-width: 23%;
-        margin: 1%;        
+        margin: 1%;
 }
 .card-img{
         height: 160px;
@@ -13,7 +13,7 @@ h2,h5,h6{
 }
 @media (max-width: 992px) {
         .container .row .infoBox{
-                  border: 2px solid black;
+                  border: 1px solid rgb(114 113 113);
                   max-width: 45%;
                   margin: 2%;
         }
@@ -24,7 +24,7 @@ h2,h5,h6{
 
 @media (max-width: 767px){
           .container .row .infoBox{
-        border: 2px solid black;
+        border: 1px solid rgb(114 113 113);
         max-width: 90%;
         margin: 3%;
         }

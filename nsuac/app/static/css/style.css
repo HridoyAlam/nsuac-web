@@ -1063,7 +1063,7 @@ height: 80px;}
    ============================================================== */
 footer {
   background: #2d2d2d;
-  padding: 60px 0 100px; }
+  padding: 3px 0 3px; }
 
 .subscribe {
   border-bottom: 1px solid #3f3f3f; }
@@ -3412,7 +3412,7 @@ div.panel {
     line-height: 1.5; }
 
 .teachers-single {
-  padding: 98px 0; }
+  padding: 20px 0; }
 
 .teachers-img_block {
   width: 80%;
