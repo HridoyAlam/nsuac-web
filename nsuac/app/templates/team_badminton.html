@@ -1,11 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 {% load static %}
-<style>
-    h2,h5,h6{
-        text-align: center;
-    }
-</style>
+<link rel="stylesheet" type="text/css" href="{% static 'css/teamsStyle.css' %}">
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -13,7 +9,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3 col-xs-12">
+        <div class="col-md-3 col-xs-12 infoBox">
             <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
             <h5>name</h5>
             <h6>batch</h6>
@@ -21,7 +17,7 @@
     </div>
     <div class="row">    
                 {% for i in badminton %}
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-sm-12 infoBox">
                     <div class="card">
                         <img alt="" src="{{i.bad_image.url}}" alt="player">
                         <h5>{{i.bad_name}}</h5>
