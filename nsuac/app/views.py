@@ -145,7 +145,10 @@ def team_badminton(request):
 
 def team_basketball(request):
     basketball = Basketball.objects.all()
-    return render(request, 'team_basketball.html', {'basketball':basketball})
+    context = {
+        'basketball':basketball
+    }
+    return render(request, 'team_basketball.html', context)
 
 
 def team_football(request):
