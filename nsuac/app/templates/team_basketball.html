@@ -11,9 +11,9 @@
     
     <div class="row">    
         {% for i in basketball %}
-            <div class="col-md-3 col-xs-12">
+            <div class="col-md-3 col-xs-12 infoBox">
                 <div class="card">
-                    <img src="{{i.bas_image.url}}" alt="player">
+                    <img src="{{i.bas_image.url}}" class="card-img" alt="player">
                     <h5>{{i.bas_name}}</h5>
                     <h6>Batch:{{i.bas_batch}}</h6> 
                 </div>
