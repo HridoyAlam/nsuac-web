@@ -7,201 +7,23 @@
     }
 </style>
 <div class="container">
-
     <div class="row">
         <div class="col-md-12">
             <h2>Team NSU Football</h2>
         </div>
     </div>
-
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
+    <div class="row">    
+        {% for i in football %}
+            <div class="col-md-3 col-xs-12">
+                <div class="card">
+                    <img src="{{i.foot_image.url}}" alt="player">
+                    <h5>{{i.foot_name}}</h5>
+                    <h6>Batch:{{i.foot_batch}}</h6> 
+                </div>
+            </div>
+        {% endfor %}
     </div>
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-    </div>
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-    </div>
-
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-    </div>
-
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-    </div>
-
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-    </div>
-
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-    </div>
-    <div class="row">
-        
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-        <div class="col-md-3 col-xs-12">
-            <img src="{% static 'images/HallOfFame/pp-male.jpg' %}" alt="male">
-            <h5>name</h5>
-            <h6>batch</h6>
-        </div>
-    </div>
+    
 </div>
 
 {% endblock %}
