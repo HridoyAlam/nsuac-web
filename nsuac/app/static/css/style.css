@@ -757,7 +757,8 @@ height: 80px;}
  /*background-image: linear-gradient(to bottom, #0a2345, #091f3b, #081a32, #071629, #051020);*/
   -webkit-background-size: cover;
   background-size: cover;
-  padding: 97px 0; }
+  padding: 30px 0; 
+}
 .sponsor_head{
   color: white;
   text-align: center;
@@ -3148,7 +3149,8 @@ div.panel {
   background: #1991CB; }
 
 .faq {
-  padding: 97px 0; }
+  padding: 3px 0 33px;
+ }
 
 .login {
   padding: 97px 0; }
