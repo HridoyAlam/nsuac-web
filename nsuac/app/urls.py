@@ -44,6 +44,7 @@ urlpatterns = [
     path('team_football', views.team_football, name='team_football'),
     path('team_table_tennis', views.team_table_tennis, name='team_table_tennis'),
     path('messages_from', views.messages_from, name='messages_from'),
+    path('blog', views.blog, name='blog'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

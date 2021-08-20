@@ -13,6 +13,7 @@ admin.site.register(Football)
 admin.site.register(TableTennis)
 admin.site.register(Cricket)
 admin.site.register(SubEb)
+admin.site.register(Blog)
 class GalleryAdmin(admin.ModelAdmin):
     def image_tag(self, obj):
         return format_html('<img src="{}" width="auto" height="200px" />'.format(obj.image.url))

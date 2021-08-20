@@ -103,6 +103,13 @@ class SubEb(models.Model):
 
     def __str__(self):
         return self.s_name
+
+class Blog(models.Model):
+    b_id = models.AutoField
+    b_link = models.URLField()
+    b_date = models.DateField()
+
+    
 #python manage.py makemigrations
 #python manage.py migrate
 # python manage.py runserver

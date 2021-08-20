@@ -1,5 +1,6 @@
+from django.db import models
 from django.shortcuts import redirect, render
-from .models import Badminton, Basketball, Cricket, Football, Gallery, Slider, SubEb, TableTennis,Upcoming_event, Subscribers, Contacts
+from .models import Badminton, Basketball, Blog, Cricket, Football, Gallery, Slider, SubEb, TableTennis,Upcoming_event, Subscribers, Contacts
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
@@ -166,3 +167,8 @@ def team_table_tennis(request):
 
 def messages_from(request):
     return render(request, 'messages_from.html',{})
+
+
+def blog(request):
+    bg = Blog.objects.all()
+    return render(request, 'blog.html', {'bg':bg})
