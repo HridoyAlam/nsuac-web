@@ -95,6 +95,14 @@ class TableTennis(models.Model):
     def __str__(self):
         return self.tt_name
 
+class SubEb(models.Model):
+    s_id = models.AutoField
+    s_name = models.CharField(max_length=30)
+    s_batch = models.IntegerField()
+    s_image = models.ImageField()
+
+    def __str__(self):
+        return self.s_name
 #python manage.py makemigrations
 #python manage.py migrate
 # python manage.py runserver

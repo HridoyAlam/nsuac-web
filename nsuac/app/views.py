@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-from .models import Badminton, Basketball, Cricket, Football, Gallery, Slider, TableTennis,Upcoming_event, Subscribers, Contacts
+from .models import Badminton, Basketball, Cricket, Football, Gallery, Slider, SubEb, TableTennis,Upcoming_event, Subscribers, Contacts
 import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
@@ -62,10 +62,12 @@ def gallery(request):
 
 
 def eb(request):
+    
     return render(request, 'eb.html', {})
 
 def subeb(request):
-    return render(request, 'subeb.html', {})
+    sub = SubEb.objects.all()
+    return render(request, 'subeb.html', {'sub':sub})
 
 def hallOfFame(request):
     return render(request, 'hallOfFame.html', {})
