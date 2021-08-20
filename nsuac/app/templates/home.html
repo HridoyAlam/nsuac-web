@@ -209,7 +209,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <a href="#" class="btn btn-default btn-courses">View all Activities</a>
+                <a href="{% url 'club_life' %}" class="btn btn-default btn-courses">View all Activities</a>
             </div>
         </div>
     </div>
@@ -585,6 +585,8 @@
 
 </section>
 
-
+<section>
+    {% include 'activities/faq_box.html' %}
+</section>
 
 {% endblock %}

@@ -1065,7 +1065,7 @@ height: 80px;}
    FOOTER
    ============================================================== */
 footer {
-  background: #2d2d2d;
+  background-image: linear-gradient(to right top, #051937, #00183f, #001747, #00154e, #021255);
   padding: 3px 0 3px; }
 
 .subscribe {
@@ -3148,7 +3148,8 @@ div.panel {
   background: #1991CB; }
 
 .faq {
-  padding: 97px 0; }
+  padding: 3px 0 33px;
+ }
 
 .login {
   padding: 97px 0; }
@@ -3733,12 +3734,14 @@ div.panel {
 /*sponsors */
 .sponsors_tab{
     
-    background-image: linear-gradient(to bottom, #753a88, #42275a, #734b6d, #de6262, #eb3349);
+  background-image: linear-gradient(to left, #09154f, #1e184c, #2a1b49, #331f47, #392445);
     background-repeat: no-repeat;
+    padding: 30px 0;
 }
 .partners_tab{    
-    background-image: linear-gradient(to bottom, #0a2345, #614385, #516395, #a8e063, #56ab2f);
+  background-image: linear-gradient(to left, #190127, #17042c, #130731, #0e0a36, #040d3c);
     background-repeat: no-repeat;
+    padding: 30px 0;
 }
 
 .sponsors .sponsor_logo{
