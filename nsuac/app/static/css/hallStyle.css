@@ -10,7 +10,7 @@ body {
         margin: 2.5%;*/
     max-width: 26% !important;
     margin: 3%;
-    box-shadow: 0px -1px 30px -3px #1991CB;
+    box-shadow: 0px -1px 30px 5px #1991CB;
     border-radius: 20px;
 }
 

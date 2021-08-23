@@ -10,6 +10,7 @@
         overflow: hidden;
         border: 1px solid #ccc;
         background-color: #1991CB;
+        margin-bottom: 2vw;
     }
 
     /* Style the buttons inside the tab */
@@ -65,6 +66,7 @@
                 <button class="tablinks" onclick="openCity(event, '2012-13')">2012-13</button>
                 <button class="tablinks" onclick="openCity(event, '2010-11')">2010-11</button>
                 <button class="tablinks" onclick="openCity(event, '2009-10')">2009-10</button>
+                <button class="tablinks" onclick="openCity(event, '2008-09')">2008-09</button>
             </div>
 
             <div id="2019-20" class="tabcontent">
@@ -90,6 +92,9 @@
             </div>
             <div id="2009-10" class="tabcontent">
                 {% include 'members/panel_09-10.html' %}
+            </div>
+             <div id="2008-09" class="tabcontent">
+                {% include 'members/panel_08-09.html' %}
             </div>
 
         </div>
