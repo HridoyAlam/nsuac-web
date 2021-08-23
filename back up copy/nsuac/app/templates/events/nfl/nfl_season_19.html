@@ -1,0 +1,580 @@
+{% load static %}
+<style type="text/css">
+    th {
+        text-align: center;
+    }
+
+    .Q:hover {
+        background-color: lightgreen;
+    }
+
+    .N:hover {
+        background-color: lightcoral;
+    }
+
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{% static 'images/events/nfl/NFL2019banner.jpg' %}" alt="Banner" width="100%">
+        </div>
+
+        <div class="col-md-12">
+            <p style="text-align:justify;">ShareTrip presents NSU Football League (NFL) 2019 organized by NSU Athletics Club
+                North South University Athletics Club (NSUAC) is the only club in NSU that maneuvers all the sports based events of NSU. Annually NSUAC organizes seven events on a regular basis. NSU Football League (NFL) 2019 is one of the main event of those seven. This is an intra NSU football tournament. In NFL all the clubs of NSU participates. There are two segments in the tournament, i.e. male segment and female segment. Both the segments of NFL 2019 football tournament will proceed through the Round Robin System. And at last one champion team will come out from each segment. There are four stages in the tournament for each segment. <br>
+                Group Stage – Male & Female
+                All the clubs of NSU will be divided into four groups. Then the teams will face each other with in the groups. Through points distribution and goal difference in the points table the team standings will be decided with in the groups. The group champions and the group runner-ups will proceed to the next round, i.e. the quarter finals. This process will be followed in both male and female segments. <br>
+                Quarter Finals – Male & Female
+                The group champions and the group runner-ups from the four groups will play in the quarter finals. Each team will play one knockout match. The group champions from each group will face one of the group runner-ups from another group. So 8 teams will play 4 matches. The four winners will proceed to the semi-finals. This process will be followed in both male and female segments. <br>
+                Semi- Finals – Male & Female
+                The 4 winning teams of the four quarter finals will play in the semi-finals. There will be two semi-final matches. Each team of the 4 will play one match. The winning teams of the semi-finals will qualify for the final match. This process will be followed in both male and female segments. <br>
+                Finals – Male & Female
+                The 2 winning teams of the semi-finals will face each other in the final match. The winner of the final match will be regarded as the Champion of NFL 2019. This process will be followed in both male and female segments. <br>
+                The tournament is full of thrill, intensity and hunger for the glory of football in NSU. We hope to see you all at ShareTrip presents NSU Football League (NFL) 2019 organized by NSU Athletics Club from August 01, 2019 at APBN Field, Uttara and NSU Playground.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tab">
+                <button class="tablinks2019" onclick="openCity2019(event, 'male2019')" style=" width: 50%;" id="defaultOpen2019">Male Segment</button>
+                <button class="tablinks2019" onclick="openCity2019(event, 'female2019')" style="width: 50%;">Female Segment</button>
+            </div>
+
+            <div id="male2019" class="tabcontent2019">
+                <h3>Male Segment</h3>
+                <h4>Group Round<br><br>Points Table</h4>
+                <table class="table">
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="10">
+                                <h6>Group A</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>Art & Photography Club</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Law & Mooting Socity</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Communications Club</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Young Entepreneur Socity</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>-2</td>
+                        </tr>
+                        <tr class="N">
+                            <td>5</td>
+                            <td>Finance Club</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>-2</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="10">
+                                <h6>Group B</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>B1</td>
+                            <td>Athletics Club</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>1</td>
+                            <td>+6</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>B2</td>
+                            <td>Pharmaceutical Club</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Human Resouce Club</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Young Economist Forum</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>-3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>5</td>
+                            <td>Model UN Club</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>11</td>
+                            <td>-11</td>
+                            <td>-2</td>
+                        </tr>
+                    </tbody>
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="10">
+                                <h6>Group C</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>C1</td>
+                            <td>Social Service Club</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>+10</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>C2</td>
+                            <td>Marketing & International Business Club</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>+9</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Bio-Science Club</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>-2</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Debate Club</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>-6</td>
+                        </tr>
+                        <tr class="N">
+                            <td>5</td>
+                            <td>Earth Club</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>11</td>
+                            <td>-11</td>
+                            <td>-2</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="10">
+                                <h6>Group D</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>D1</td>
+                            <td>Public Health & Science Club</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>D2</td>
+                            <td>Computer & Engineering Club</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Ethics & Diversity Club</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>-1</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Shangskritik Shangathan</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>-1</td>
+                        </tr>
+                        <tr class="N">
+                            <td>5</td>
+                            <td>MBA Club</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>-3</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Knockout Round</h4>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>Quarter Final 1<br>APC vs MIBC</td>
+                            <td></td>
+                            <td>Quarter Final 2<br>SSC vs LMS</td>
+                            <td></td>
+                            <td>Quarter Final 3<br>AC vs CEC</td>
+                            <td></td>
+                            <td>Quarter Final 4<br>PHSC vs PC</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Semi Final 1<br>MIBC vs SSC</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Semi Final 2<br>AC vs PC</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Final <br>MIBC vs AC</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="female2019" class="tabcontent2019">
+                <h3>Female Segment</h3>
+                <h4>Group Round<br>Points Table</h4>
+                <table class="table">
+                    <thead style="text-align: center">
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>Q1</td>
+                            <td>Athletics Club</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>18</td>
+                            <td>0</td>
+                            <td>+18</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>Q2</td>
+                            <td>Bio-Science Club</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>+5</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>Q3</td>
+                            <td>Pharmaceutical Club</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>Q4</td>
+                            <td>Art & Photography Club</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr class="N">
+                            <td>5</td>
+                            <td>Young Enteprenures Forum</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>-1</td>
+                        </tr>
+                        <tr class="N">
+                            <td>6</td>
+                            <td>Earth Club</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>-3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>7</td>
+                            <td>Public Health & Science Club</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>-18</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Knockout Round</h4>
+                <table class="table table-bordered">
+                    <tbody>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Semi Final 1<br>AC vs PC</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Semi Final 2<br>BSC vs APC</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Final <br>AC vs BSC</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("defaultOpen2019").click();
+
+    function openCity2019(evt, cityName) {
+        var i, tabcontent2019, tablinks2019;
+        tabcontent2019 = document.getElementsByClassName("tabcontent2019");
+        for (i = 0; i < tabcontent2019.length; i++) {
+            tabcontent2019[i].style.display = "none";
+        }
+        tablinks2019 = document.getElementsByClassName("tablinks2019");
+        for (i = 0; i < tablinks2019.length; i++) {
+            tablinks2019[i].className = tablinks2019[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
+{% block body %}
+{% endblock %}
