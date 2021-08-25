@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static%}
+
+
+    <!-- ========================= ABOUT IMAGE =========================-->
+    <!--//
+<div class="about_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="index.html"><img src="{% static 'images/responsive-logo.png' %}" class="responsive-logo img-fluid" alt="responsive-logo"></a>
+            </div>
+        </div>
+         
+        <div class="row">
+            <div class="col-md-12">
+                <h1>About Us</h1>
+            </div>
+        </div>
+    </div>
+</div>
+END ABOUT IMAGE -->
+<!--============================= WELCOME TITLE =============================-->
+<div class="row">
+    <div class="col-md-12">
+        {% include 'activities/about_image.html' %}
+    </div>
+</div>
+<section class="welcome_about">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h2>What we are</h2>
+                <p>North South University Athletics Club (NSUAC) is the ultimate sports club of North South University. It was established in 1995 and has been offering sporting and competitive activity for the last 25 years. The club takes immense pride in representing NSU at many extramural sports events in different categories and brought glory and honor to the Institute. NSUAC is one of the oldest and prestigious clubs of North South University.                                   
+
+                    <br>
+                    <br> The purpose of NSUAC is to bring out the best of the athletes in NSU, prepare, and groom them for extramural competition. It offers an opportunity to students who desire to participate and develop their skills in particular sports. Students are able to derive pleasure and add spirit to their monotonous academic life as NSUAC provides a chance to the participants to engage in many intramural sports events. NSUAC has also represented NSU at many Inter-University sports competitions and came out as champions in Cricket, Football, Basketball, Table Tennis, Badminton and many more. 
+                    <br>
+                    <br>
+                    The principal events organized by NSUAC has helped in emanating the best of sporting talents among the students of NSU. </p>
+                    <a href="{% url 'all_events' %}" class="btn btn-default btn-about">VIEW OUR EVENTS</a>
+                </div>
+        </div>
+
+    </div>
+</section>
+    <!--//END WELCOME TITLE -->
+    <!--============================= TESTIMONIAL =============================-->
+    <section class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Our Members Says</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="single-item">
+                        <div class="quote">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            <p class="quote_text">There is nothing like the camaraderie that one has with fellow drinkers. It’s NSUAC you never
+                                leave once you join. Well, willingly or easily</p>
+                            <div class="testi-img_block">
+                                <img src="{% static 'images/testi-img.jpg' %}" class="img-fluid" alt="#">
+                                <p><span>Richi</span> General Member</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            <p class="quote_text">In NSUAC I found the companions I needed to make my university life memorable and
+                                meaningful. The things we are learning through this organization going to be with every member
+                                of NSUAC forever</p>
+                            <div class="testi-img_block">
+                                
+                                <img src="{% static 'images/testi-img.jpg' %}" class="img-fluid" alt="#">
+                                <p><span>Sadat</span>General Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END TESTIMONIAL -->
+    
+    
+{% endblock %}

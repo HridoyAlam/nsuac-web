@@ -1,0 +1,574 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+<!--============================= HEADER =============================-->
+<section>
+
+    <div class="slider_img">
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active">
+                    <!-- {% static 'images/up-coming.jpg' %} -->
+                    <img class="d-block" src="{{ slider.slide_image.url }}" alt="First slide">
+                    <div class="carousel-caption d-md-block">
+                        <div class="slider_title">
+
+                            <h1>{{ slider.slide_title }}</h1>
+                            <p style="display:none;">{{ slider.slide_details }}</p>
+                            <div class="slider-btn">
+                                <a href="#" class="btn btn-default">Up Coming Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+
+                    <img class="d-block" src="{% static 'images/slider.jpg' %}" alt="First slide">
+                    <div class="carousel-caption d-md-block">
+                        <div class="slider_title">
+                            <h1>Club Life @ NSUAC</h1>
+                            <div class="slider-btn">
+                                <a href="{% url 'all_events' %}" class="btn btn-default">SEE Events</a>
+                                <a href="{% url 'club_life' %}" class="btn btn-default">Activities</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <img class="d-block" src="{% static 'images/slider-2.jpg' %}" alt="Second slide">
+                    <div class="carousel-caption d-md-block">
+                        <div class="slider_title">
+                            <h1>Flag Bearers</h1>
+                            <div class="slider-btn">
+                                <a href="{% url 'eb' %}" class="btn btn-default">EB Panel</a>
+                                <a href="{% url 'faculty_advisor' %}" class="btn btn-default">Faculty</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <img class="d-block" src="{% static 'images/slider-3.jpg' %}" alt="Third slide">
+                    <div class="carousel-caption d-md-block">
+                        <div class="slider_title">
+                            <h1>Achievements</h1>
+                            <div class="slider-btn">
+                                <a href="{%url 'club_life'%}" class="btn btn-default">Glories</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <i class="icon-arrow-left fa-slider" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <i class="icon-arrow-right fa-slider" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+<!--//END HEADER -->
+<!--============================= ABOUT =============================-->
+<section class="clearfix about bg_hridoy">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Welcome</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Born in 1995, North South University Athletics Club or popularly known as NSUAC is the 1st and ONLY club as well as organization that Promotes, Organizes and Controls ALL THE SPORTING ACTIVITIES of North South University.
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--//END ABOUT -->
+<!--============================= OUR Activities =============================-->
+<section class="our_courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Our Activities</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="courses_box mb-5">
+                    <div class="course-img-wrap">
+
+                        <img src="{% static 'images/Activities/internalCricket191.jpg' %}" class="img-fluid" alt="Internals">
+                        <div class="courses_box-img">
+                            <div class="courses-link-wrap">
+                                <a href="{% url 'activity_one' %}" class="course-link"><span>Activity Details </span></a>
+
+                            </div>
+                            <!-- // end .courses-link-wrap -->
+                        </div>
+                    </div>
+                    
+                    <!-- // end .course-img-wrap -->
+                    <div class="courses_icon">
+                        <img src="{% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
+                    </div>
+                    <a href="{% url 'activity_one' %}" class="course-box-content">
+                        <h3>Internal Tournements</h3>
+                        <p class="event_details_p"></p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="courses_box mb-5">
+                    <div class="course-img-wrap">
+
+                        <img src="{% static 'images//Activities/orientationBooth191.jpg' %}" class="img-fluid" alt="booths">
+                        <div class="courses_box-img">
+                            <div class="courses-link-wrap">
+                                <a href="{% url 'activity_two' %}" class="course-link"><span>Activity Details </span></a>
+
+                            </div>
+                            <!-- // end .courses-link-wrap -->
+                        </div>
+                    </div>
+                    <!-- // end .course-img-wrap -->
+                    <div class="courses_icon">
+
+                        <img src=" {% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
+                    </div>
+                    <a href="{% url 'activity_two' %}" class="course-box-content">
+                        <h3>Booths</h3>
+                        <p class="event_details_p"></p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="courses_box mb-5">
+                    <div class="course-img-wrap">
+
+                        <img src="{% static 'images//Activities/oneDayTour2019.JPG' %}" class="img-fluid" alt="One Day Tours">
+                        <div class="courses_box-img">
+                            <div class="courses-link-wrap">
+                                <a href="{% url 'activity_three' %}" class="course-link"><span>Activity Details </span></a>
+
+                            </div>
+                            <!-- // end .courses-link-wrap -->
+                        </div>
+                    </div>
+                    <!-- // end .course-img-wrap -->
+                    <div class="courses_icon">
+
+                        <img src="{% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
+                    </div>
+                    <a href="{% url 'activity_three' %}" class="course-box-content">
+                        <h3>One Day Tours</h3>
+                        <p class="event_details_p"></p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="courses_box mb-5">
+                    <div class="course-img-wrap">
+
+                        <img src="{% static 'images//Activities/iftarParty2019.jpg' %}" class="img-fluid" alt="Iftar Party">
+                        <div class="courses_box-img">
+                            <div class="courses-link-wrap">
+                                <a href="{% url 'activity_four' %}" class="course-link"><span>Activity Details </span></a>
+
+                            </div>
+                            <!-- // end .courses-link-wrap -->
+                        </div>
+                    </div>
+                    <!-- // end .course-img-wrap -->
+                    <div class="courses_icon">
+
+                        <img src=" {% static 'images/plus-icon.png' %}" class="img-fluid close-icon" alt="plus-icon">
+                    </div>
+                    <a href="{% url 'activity_four' %}" class="course-box-content">
+                        <h3>Iftar Party</h3>
+                        <p class="event_details_p"></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="{% url 'club_life' %}" class="btn btn-default btn-courses">View all Activities</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//END OUR EVENTS -->
+<!--============================= EVENTS =============================-->
+<section class="event">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Upcoming Events</h2>
+                <div class="event-img">
+                    <span class="event-img_date">{{up_event.up_event_date}}</span>
+
+                    <img src="{{ up_event.up_event_image.url }}" class="img-fluid" alt="event-img">
+                    <div class="event-img_title">
+                        <h3>{{up_event.up_event_title}}</h3>
+                        <p>{{up_event.up_event_details}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Important Dates</h2>
+                <div class="event-date-slide">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="event_date">
+                                <div class="event-date-wrap">
+                                    <p>19</p>
+                                    <span>Aug.21</span>
+                                </div>
+                            </div>
+                            <div class="date-description">
+                                <h3>Ashura</h3>
+                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                <hr class="event_line">
+                            </div>
+                            <div class="event_date">
+                                <div class="event-date-wrap">
+                                    <p>27</p>
+                                    <span>Aug.21</span>
+                                </div>
+                            </div>
+                            <div class="date-description">
+                                <h3>BBS'21 Registration Starts.</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="event_date">
+                                <div class="event-date-wrap">
+                                    <p>01</p>
+                                    <span>Sep.21</span>
+                                </div>
+                            </div>
+                            <div class="date-description">
+                                <h3>Newzeland Tour of Bangladesh</h3>
+                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                <hr class="event_line">
+                            </div>
+                            <div class="event_date">
+                                <div class="event-date-wrap">
+                                    <p>02</p>
+                                    <span>Sep.21</span>
+                                </div>
+                            </div>
+                            <div class="date-description">
+                                <h3>BBS'21 Registration Ends</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="event_date">
+                                <div class="event-date-wrap">
+                                    <p>09</p>
+                                    <span>Sep.21</span>
+                                </div>
+                            </div>
+                            <div class="date-description">
+                                <h3>Prize Giving Ceremony of BBS'21</h3>
+                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                <hr class="event_line">
+                            </div>
+                            <div class="event_date">
+                                <div class="event-date-wrap">
+                                    <p>05</p>
+                                    <span>Oct.21</span>
+                                </div>
+                            </div>
+                            <div class="date-description">
+                                <h3>National Teachers Day</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//END EVENTS -->
+<!--============================= DETAILED CHART =============================-->
+<div class="detailed_chart">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom">
+                <div class="chart-img">
+                    <img src="{% static 'images/chart-icon_1.png' %}" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter">7</span> Executives</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom chart_top">
+                <div class="chart-img">
+                    <img src="{% static 'images/chart-icon_2.png' %}" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter">350 </span> Members </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 chart_top">
+                <div class="chart-img">
+
+                    <img src="{% static 'images/chart-icon_3.png' %}" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter">10</span> Events
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="chart-img">
+
+                    <img src="{% static 'images/chart-icon_4.png' %}" class="img-fluid" alt="chart_icon">
+                </div>
+                <div class="chart-text">
+                    <p><span class="counter">26</span> Years Exp.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//END DETAILED CHART -->
+<!--============================= OUR BLOG =============================-->
+<section class="blog" style="display:none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Our Blog</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <a href="blog-post.html" class="home_blog_link">
+                    <div class="blog-img_box">
+                        <iframe  src="https://www.youtube.com/embed/CCideIAhSe4" 
+                        style="object-fit: fill;width:540px; height:315px"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!--    <img src="{% static 'images/blog-img_3.jpg' %}" class="img-fluid blog_display" alt="blog-img"> 
+                        <div class="blogtitle">
+                            <h3>Lorem Ipsum passage</h3>
+                            <i class="icon-user fa-common" aria-hidden="true"></i>
+                            <p>by: admin</p>
+                            <i class="icon-speedometer fa-common" aria-hidden="true"></i>
+                            <p>9- Nov-2016</p>
+                        </div>-->
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-6 col-sm-12">
+                <a href="blog-post.html" class="home_blog_link">
+                    <div class="blog-img_box">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fnsuathleticsclub%2Fvideos%2F336295571318112%2F&show_text=true&width=560&t=0" 
+                        style="border:none;overflow:hidden;object-fit: fill;width:540px; height:315px"
+                         scrolling="no" frameborder="0"
+                         allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                         allowFullScreen="true"></iframe>
+
+                        <!--         <img src="{% static 'images/blog-img_2.jpg' %}" class="img-fluid blog_display" alt="blog-img">
+                        <div class="blogtitle">
+                            <h3>Variations of passages</h3>
+                            <i class="icon-user fa-common" aria-hidden="true"></i>
+                            <p>by: admin</p>
+                            <i class="icon-speedometer fa-common" aria-hidden="true"></i>
+                            <p>9- Nov-2016</p>
+                        </div>-->
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <a href="blog-post.html" class="home_blog_link">
+                    <div class="blog-img_box">
+                        <iframe  src="https://www.youtube.com/embed/pEIi1OJj5WM" 
+                        style="object-fit: fill;width:540px; height:315px"
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <a href="blog-post.html" class="home_blog_link">
+                    <div class="blog-img_box">
+
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnsuathleticsclub%2Fposts%2F4169046446481985&show_text=true&width=500" 
+                        width="540" height="315" style="border:none;overflow:hidden;object-fit: fill;" scrolling="no" 
+                        frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; 
+                        picture-in-picture; web-share"></iframe>
+
+                        <!-- // end .blog-video //->
+                        <div class="blogtitle">
+                            <h3>Nam libero tempore</h3>
+                            <i class="icon-user fa-common" aria-hidden="true"></i>
+                            <p>by: admin</p>
+                            <i class="icon-speedometer fa-common" aria-hidden="true"></i>
+                            <p>9- Nov-2016</p>
+                        </div>-->
+                    </div>
+                </a>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="{%  url 'blog' %}" class="btn btn-default btn-courses">VIEW ALL BLOG</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sponsor part-->
+<section>
+    <!-- alvi change it to sponsor_part from detailed_chart  in css file 
+        also changes the background images(give some color in background and add title(our preivous sponsor))
+    -->
+    <div class="detailed_chart sponsors_tab">
+        <div class="container wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="sponsor_head">Our Previous Sponsors</h2>
+                </div>
+            </div>
+<div class="sponsors">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo">
+                    <a href="https://acimotors-bd.com/products/automobiles/yamaha"><img src="{% static 'images/Sponsors/Yamaha.png' %}" alt="yamaha"></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo">
+                    <a href="https://www.bashundharagroup.com/page/brand-bashundhara-kings"> <img src="{% static 'images/Sponsors/Bashundhara_kings.png'%}" alt=""></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo squre-logo">
+                    <a href="https://www.polarbd.com/"> <img src="{% static 'images/Sponsors/polar_icecream.png'%}" alt=""></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo squre-logo">
+                    <a href="http://radiodhoni.fm/"> <img src="{% static 'images/Sponsors/RADIO_DHONI.png'%}" alt=""></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo">
+                    <a href="https://sharetrip.net/"> <img src="{% static 'images/sponsors/ShareTrip.png' %}" alt=""></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo squre-logo">
+                    <a href="http://olympicbd.com/"> <img src="{% static 'images/sponsors/Olympic_Nutty_Biscuits.jpeg'%}" alt=""></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo">
+                    <a href="#"> <img src="{% static 'images/footer-logo.png'%}" alt=""></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 sponsor_logo">
+                    <a href="#"> <img src="{% static 'images/footer-logo.png'%}" alt=""></a>
+                </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detailed_chart partners_tab">
+        <div class="container wrapper">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="sponsor_head">Our Previous Partners</h2>
+                </div>
+            </div>
+<div class="partners">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/Prothom_Alo.jpg'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/JAMUNA_TV.png'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/HASH.jpg'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/pursuit_photography.png'%}" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/amader_somoy.png'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/daily_sun.png'%}" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/bit_byte.png'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/risingbd.png'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/ground_zero_bd.png'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/asian_paints.png'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/RADIO_SPICE.png'%}" alt="">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-2 sponsor_logo">
+                    <img src="{% static 'images/Partners/Bridal_Heritage.png'%}" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    {% include 'activities/faq_box.html' %}
+</section>
+
+{% endblock %}
