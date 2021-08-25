@@ -22,7 +22,8 @@
     }
 
     .card {
-        position: absolute;
+       /* position: absolute;*/
+        position: inherit;
         border-radius: 8px;
         height: 450px;
         width: 400px;
@@ -129,7 +130,7 @@
         transition-delay: 0.06s;
     }
 
-    .connection.behance {
+    .connection.linkedin {
         transition-delay: 0.12s;
     }
 
@@ -150,7 +151,7 @@
         background-size: cover;
     }
 
-    .connection.behance .icon {
+    .connection.linkedin .icon {
         height: 18px;
         width: 18px;
         margin-top: 3px;
@@ -160,15 +161,15 @@
     }
 
     .connection.facebook .icon {
-        background-image: url("");
+        background-image: url("{% static 'images/icon-fb.png'%}");
     }
 
     .connection.twitter .icon {
-        background-image: url("");
+        background-image: url("{% static 'images/icon-twitter.png'%}");
     }
 
-    .connection.behance .icon {
-        background-image: url("");
+    .connection.linkedin .icon {
+        background-image: url("{% static 'images/icon-linkedin.png'%}");
     }
 
     .card {
@@ -197,7 +198,7 @@
                             <div class="icon"></div>
                         </div>
                         background-image: url("")
-                        <div class="connection behance">
+                        <div class="connection linkedin">
                             <div class="icon"></div>
                         </div>
                     </div>
