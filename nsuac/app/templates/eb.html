@@ -7,6 +7,9 @@
         height: 100%;
         width: 100%;
     }
+    .row{
+        margin: 2vw 0px;
+    }
 
     .background {
         position: absolute;
@@ -22,11 +25,15 @@
     }
 
     .card {
-       /* position: absolute;*/
+        /* position: absolute;*/
         position: inherit;
         border-radius: 8px;
-        height: 450px;
-        width: 400px;
+        /* height: 450px;
+        width: 400px;*/
+
+        width: 100%;
+        height: 100%;
+
         top: 0;
         right: 0;
         left: 0;
@@ -173,22 +180,49 @@
     }
 
     .card {
-        background-image: url("");
+        /*  background-image: url("{% static 'images/HallOfFame/EBs/hridoy.jpg'%}");*/
+    }
+
+    .president {
+        background-image: url("{% static 'images/HallOfFame/EBs/hridoy.jpg'%}");
+    }
+
+    .gs {
+        background-image: url("{% static 'images/HallOfFame/EBs/rahul.jpg'%}");
+    }
+
+    .vps {
+        background-image: url("{% static 'images/HallOfFame/EBs/sajjad.jpg'%}");
+    }
+
+    .vpa {
+        background-image: url("{% static 'images/HallOfFame/EBs/ramisa.jpg'%}");
+    }
+
+    .tr {
+        background-image: url("{% static 'images/HallOfFame/EBs/topu.jpg'%}");
+    }
+
+    .js1 {
+        background-image: url("{% static 'images/HallOfFame/EBs/hussainur.jpg'%}");
+    }
+
+    .js2 {
+        background-image: url("{% static 'images/HallOfFame/EBs/alvi.jpg'%}");
     }
 
     .background {
-        background-image: url("");
+        /*background-image: url("{% static 'images/chart_bg.jpg'%}");*/
     }
 
 </style>
 <div class="container">
-    <h1>Executive Body Members</h1>
+    <h1>Executive Body Members</h1><br><br>
 
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-3">
             <div class="background"></div>
-            <div id="curve" class="card">
-                background-image: url("")
+            <div id="curve" class="card president">
                 <div class="footer">
                     <div class="connections">
                         <div class="connection facebook">
@@ -197,7 +231,6 @@
                         <div class="connection twitter">
                             <div class="icon"></div>
                         </div>
-                        background-image: url("")
                         <div class="connection linkedin">
                             <div class="icon"></div>
                         </div>
@@ -226,13 +259,227 @@
                 <div class="card-blur"></div>
             </div>
         </div>
-        <div class="col-md-6">
-
+        <div class="col-md-3">
+            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
         </div>
+        <div class="col-md-3">
+            <div class="background"></div>
+            <div id="curve" class="card gs">
+                <div class="footer">
+                    <div class="connections">
+                        <div class="connection facebook">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection twitter">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection linkedin">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <svg id="curve">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info">
+                        <div class="name">Rahul Halder</div>
+                        <div class="job">General Secretary</div>
+                    </div>
+                </div>
+                <div class="card-blur"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="background"></div>
+            <div id="curve" class="card vps">
+                <div class="footer">
+                    <div class="connections">
+                        <div class="connection facebook">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection twitter">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection linkedin">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <svg id="curve">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info">
+                        <div class="name">Sajjad Hossen</div>
+                        <div class="job">Vice-President</div>
+                    </div>
+                </div>
+                <div class="card-blur"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        </div>
+        <div class="col-md-3">
+            <div class="background"></div>
+            <div id="curve" class="card vpa">
+                <div class="footer">
+                    <div class="connections">
+                        <div class="connection facebook">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection twitter">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection linkedin">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <svg id="curve">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info">
+                        <div class="name">Ramisa Anjuman</div>
+                        <div class="job">Vice-President</div>
+                    </div>
+                </div>
+                <div class="card-blur"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="background"></div>
+            <div id="curve" class="card tr">
+                <div class="footer">
+                    <div class="connections">
+                        <div class="connection facebook">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection twitter">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection linkedin">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <svg id="curve">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info">
+                        <div class="name">Shafiq Topu</div>
+                        <div class="job">Treasurer</div>
+                    </div>
+                </div>
+                <div class="card-blur"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        </div>
+        <div class="col-md-3">
+            <div class="background"></div>
+            <div id="curve" class="card js1">
+                <div class="footer">
+                    <div class="connections">
+                        <div class="connection facebook">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection twitter">
+                            <div class="icon"></div>
+                        </div>
+                        <div class="connection linkedin">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                    <svg id="curve">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400" fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info">
+                        <div class="name">Md. Hussainur Rahman Khan</div>
+                        <div class="job">Joint Secretary</div>
+                    </div>
+                </div>
+                <div class="card-blur"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        </div>
+    </div>
+    
+
     </div>
 
 
-</div>
-
-
-{% endblock %}
+    {% endblock %}
