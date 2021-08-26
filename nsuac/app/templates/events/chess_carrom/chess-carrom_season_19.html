@@ -1,0 +1,1321 @@
+{% load static %}
+<style type="text/css">
+    th {
+        text-align: center;
+    }
+
+    .Q:hover {
+        background-color: lightgreen;
+    }
+
+    .N:hover {
+        background-color: lightcoral;
+    }
+
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{% static 'images/events/nfl/NFL2019banner.jpg' %}" alt="Banner" width="100%">
+        </div>
+
+        <div class="col-md-12">
+            <p style="text-align:justify;">Assalamu Alaikum everyone. For the first Time in NSU history NSU Athletics Club presents you Intra NSU Chess Master & Carrom Champ 2019. The event consists of two segments, i.e, Chess tournament and Carrom tournament. <br>
+                Both the tournaments will be played following the Round Robbin System. In the Chess tournament players will participate individually. In the Carrom tournament players need to make a team of two and then participate. Both the tournaments are mixed gender tournaments, i.e, open for both male and female. <br>
+                Players can participate in any one segment of the event. To participate in the event players need to register themselves first and the registration will be a first come first serve process. <br>
+                # Registration is on 12th June, 2019 & 13th June, 2019 (10:30 AM - 05:30 PM) at the Plaza area. <br>
+                #You will have to bring a photo copy of your NSU ID. <br>
+                # Event will start from 14th June, 2019 at the NSU Indoor.
+                The participants list, Fixtures and game rules will be provided on 14th June, 2019 at 09:00 PM in this event page. <br>
+                For any query contact Anwarul Islam (‪01611575600‬) or Sayem Mahmud (‪01626909723‬)
+                #BeSpiritedWithNSUAC
+                #LiveToRuleDieInvincible</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tab">
+                <button class="tablinks2019" onclick="openCity2019(event, 'carrom2019')" style=" width: 50%;" id="defaultOpen2019">Carrom Segment</button>
+                <button class="tablinks2019" onclick="openCity2019(event, 'chess2019')" style="width: 50%;">Chess Segment</button>
+            </div>
+
+            <div id="carrom2019" class="tabcontent2019">
+                <h3>Carrom Segment</h3>
+                <h4>Group Round<br><br>Points Table</h4>
+                <table class="table">
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group A</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group B</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group C</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group D</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group E</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group F</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group G</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+                
+                <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group H</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Knockout Round</h4>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td><b>Quarter Final 1</b><br> vs <b></b></td>
+                            <td></td>
+                            <td><b>Quarter Final 2</b><br><b></b> vs </td>
+                            <td></td>
+                            <td><b>Quarter Final 3</b><br><b></b> vs </td>
+                            <td></td>
+                            <td><b>Quarter Final 4</b><br> vs <b></b></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><b>Semi Final 1</b><br><b></b> vs </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>Semi Final 2</b><br><b></b> vs </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>Final</b><br> vs <b></b></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="chess2019" class="tabcontent2019">
+                <h3>Chess Segment</h3>
+                <h4>Group Round<br><br>Points Table</h4>
+                <table class="table">
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group A</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group B</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group C</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group D</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group E</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group F</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+
+                    <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group G</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+                
+                <thead style="text-align: center">
+                        <tr>
+                            <th colspan="11">
+                                <h6>Group H</h6>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Pts</th>
+                            <th>SD M1</th>
+                            <th>SD M2</th>
+                            <th>SD M3</th>
+                            <th>Scores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Q">
+                            <td>A1</td>
+                            <td>The Shield</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>21</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="Q">
+                            <td>A2</td>
+                            <td>Rising Sun</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>-21</td>
+                            <td>20</td>
+                            <td>23</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="N">
+                            <td>3</td>
+                            <td>Team Galacticos</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>23</td>
+                            <td>-20</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="N">
+                            <td>4</td>
+                            <td>Vipers</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>0</td>
+                            <td>-23</td>
+                            <td>-46</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("defaultOpen2019").click();
+
+    function openCity2019(evt, cityName) {
+        var i, tabcontent2019, tablinks2019;
+        tabcontent2019 = document.getElementsByClassName("tabcontent2019");
+        for (i = 0; i < tabcontent2019.length; i++) {
+            tabcontent2019[i].style.display = "none";
+        }
+        tablinks2019 = document.getElementsByClassName("tablinks2019");
+        for (i = 0; i < tablinks2019.length; i++) {
+            tablinks2019[i].className = tablinks2019[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
+{% block body %}
+{% endblock %}

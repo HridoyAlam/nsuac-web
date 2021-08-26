@@ -32,17 +32,20 @@
     }
 
     /* Style the tab content */
-    .tabcontent, .tabcontent2019 {
+    .tabcontent,
+    .tabcontent2019 {
         display: none;
         padding: 6px 12px;
         border: 1px solid #ccc;
         border-top: none;
     }
 
-    h3,h1 {
+    h3,
+    h1 {
         text-align: center;
         padding: 5px;
     }
+
 </style>
 <div class="container">
     <div class="row">
@@ -77,18 +80,18 @@
             </div>
 
             <div id="Winners" class="tabcontent">
-            {% include 'events/nfl/nfl_winners.html' %}
+                {% include 'events/nfl/nfl_winners.html' %}
             </div>
 
             <div id="Season2019" class="tabcontent">
-            {% include 'events/nfl/nfl_season_19.html' %}
+                {% include 'events/nfl/nfl_season_19.html' %}
 
             </div>
             <div id="Season2017" class="tabcontent">
-                            {% include 'events/nfl/nfl_season_17.html' %}
+                {% include 'events/nfl/nfl_season_17.html' %}
             </div>
             <div id="Season2016" class="tabcontent">
-                            {% include 'events/nfl/nfl_season_16.html' %}
+                {% include 'events/nfl/nfl_season_16.html' %}
             </div>
             <div id="Season2014" class="tabcontent">
                 <h3>Season 2014</h3>

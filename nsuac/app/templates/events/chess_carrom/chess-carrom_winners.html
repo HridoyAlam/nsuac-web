@@ -1,0 +1,153 @@
+{% load static %}
+<style>
+    /* Style the tab */
+    .tabS {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #1991CB;
+    }
+
+    /* Style the buttons inside the tab */
+    .tabS button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tabS button:hover {
+        background-color: #F29020;
+    }
+
+    /* Create an active/current tablink class */
+    .tabS button.active {
+        background-color: #F2A922;
+    }
+
+    /* Style the tab content */
+    .tabcontentS {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    h3,
+    h1 {
+        text-align: center;
+        padding: 5px;
+    }
+
+</style>
+<style type="text/css">
+    .title {
+        box-shadow: 0px 3px 10px 10px #1991CB;
+    }
+
+    .champ {
+        box-shadow: 0px 3px 10px 10px #1991CB;
+        padding: 2vw;
+    }
+
+    .runners {
+        box-shadow: 0px 3px 10px 10px #1991CB;
+        padding: 2vw;
+    }
+
+    .teams img {
+        width: 30%;
+        min-height: 180px;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tablinksS {
+        width: 50%;
+    }
+
+</style>
+<div class="container w">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Winners</h3>
+            <p></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tabS">
+                <button class="tablinksS" onclick="openSegment(event, 'chess')" id="defaultOpenS">Chess Segment</button>
+                <button class="tablinksS" onclick="openSegment(event, 'carrom')">Carrom Segment</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chess" class="tabcontentS">
+        <h3>Chess Segment</h3>
+        <div class="row">
+            <div class="col-md-12 col-xs-12 title">
+                <h3>Season 2019</h3>
+            </div>
+            <div class="col-md-7 col-xs-12 champ teams">
+                <img src="{% static 'images/clubs/nsu_ac.png' %}" alt="tamzid">
+                <h5>Tamzid</h5>
+                <h6>Champion</h6>
+            </div>
+            <div class="col-md-5 col-xs-12 runners teams">
+                <img src="{% static 'images/clubs/nsu_mibc.png' %}" alt="sadman">
+                <h5>Sadman</h5>
+                <h6>Runners Up</h6>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <div id="carrom" class="tabcontentS">
+        <h3>Carrom Segment</h3>
+                <div class="row">
+            <div class="col-md-12 col-xs-12 title">
+                <h3>Season 2019</h3>
+            </div>
+            <div class="col-md-7 col-xs-12 champ teams">
+                <img src="{% static 'images/clubs/nsu_ac.png' %}" alt="nsuac">
+                <h5>NSU Athletics Club</h5>
+                <h6>Champion</h6>
+            </div>
+            <div class="col-md-5 col-xs-12 runners teams">
+                <img src="{% static 'images/clubs/nsu_bsc.png' %}" alt="nsubsc">
+                <h5>NSU Bio Science Club</h5>
+                <h6>Runners Up</h6>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<script>
+    document.getElementById("defaultOpenS").click();
+
+    function openSegment(evt, segmentName) {
+        var i, tabcontentS, tablinksS;
+        tabcontentS = document.getElementsByClassName("tabcontentS");
+        for (i = 0; i < tabcontentS.length; i++) {
+            tabcontentS[i].style.display = "none";
+        }
+        tablinksS = document.getElementsByClassName("tablinksS");
+        for (i = 0; i < tablinksS.length; i++) {
+            tablinksS[i].className = tablinksS[i].className.replace(" active", "");
+        }
+        document.getElementById(segmentName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
+{% block body %}
+{% endblock %}
