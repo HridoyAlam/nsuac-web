@@ -7,8 +7,14 @@
         height: 100%;
         width: 100%;
     }
-    .row{
+
+    .row {
         margin: 2vw 0px;
+    }
+
+    p {
+        text-align: justify;
+        text-align-last: center;
     }
 
     .background {
@@ -150,8 +156,8 @@
     }
 
     .connection.twitter .icon {
-        height: 18px;
-        width: 18px;
+        height: 100%;
+        width: 100%;
         margin-top: 4px;
         margin-left: 4px;
         background-position: center;
@@ -159,8 +165,8 @@
     }
 
     .connection.linkedin .icon {
-        height: 18px;
-        width: 18px;
+        height: 100%;
+        width: 100%;
         margin-top: 3px;
         margin-left: 4px;
         background-position: center;
@@ -215,12 +221,24 @@
         /*background-image: url("{% static 'images/chart_bg.jpg'%}");*/
     }
 
+    @media (max-width: 992px) and (min-width: 768px) {
+        .card {
+            height: 50vw;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .card {
+            height: 85vw;
+        }
+    }
+
 </style>
 <div class="container">
     <h1>Executive Body Members</h1><br><br>
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="background"></div>
             <div id="curve" class="card president">
                 <div class="footer">
@@ -259,10 +277,10 @@
                 <div class="card-blur"></div>
             </div>
         </div>
-        <div class="col-md-3">
-            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <p> Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="background"></div>
             <div id="curve" class="card gs">
                 <div class="footer">
@@ -301,12 +319,12 @@
                 <div class="card-blur"></div>
             </div>
         </div>
-        <div class="col-md-3">
-            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <p>Rahul Halder - General Secretary of NSUAC: He proved to be an extremely diligent human being. Halder’s humble attitude and patience in listening to both his seniors and juniors are awe-inspiring. He never seems to get tired and can even give his blood to make any event of the club successful.</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="background"></div>
             <div id="curve" class="card vps">
                 <div class="footer">
@@ -345,10 +363,10 @@
                 <div class="card-blur"></div>
             </div>
         </div>
-        <div class="col-md-3">
-            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <p>Sajjad Hossen - Vice President of NSUAC: The coolest of all EBs. Hossen possesses great interpersonal skills, which the entire club has benefitted from. His ability to befriend anyone makes it easier for the newcomers to get involved in the club. A down to earth man who handles pressure with a big smile on his face.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="background"></div>
             <div id="curve" class="card vpa">
                 <div class="footer">
@@ -387,12 +405,12 @@
                 <div class="card-blur"></div>
             </div>
         </div>
-        <div class="col-md-3">
-            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <p>Ramisa Anjuman - Vice President of NSUAC: The only female executive in a male-dominated club. An inspiration to all the female members of NSUAC. Her devotion towards the club is laudable. NSUAC had always required more fieldwork and she never ceases to participate as equally as the men of the club.</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="background"></div>
             <div id="curve" class="card tr">
                 <div class="footer">
@@ -431,10 +449,10 @@
                 <div class="card-blur"></div>
             </div>
         </div>
-        <div class="col-md-3">
-            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <p>Shafiq Topu - Treasurer of NSUAC: Topu is a soft-spoken man. His perseverance and enthusiasm towards completing a task are quite commendable. Honesty and faithfulness are the two qualities that he possesses in acquiring this particular position in the club.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="background"></div>
             <div id="curve" class="card js1">
                 <div class="footer">
@@ -473,13 +491,13 @@
                 <div class="card-blur"></div>
             </div>
         </div>
-        <div class="col-md-3">
-            Hridoy Alam - President of NSUAC: His tireless dedication and innumerable contributions towards the club is undefinable. Alam’s intellectual acuity and resilience have elevated the club to this position today. An ambitious man who has infinite love and strong commitment is bound to take NSUAC to a greater height.
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <p>Md Hussainur Rahman Khan - Joint Secretary of NSUAC: He has a very strong personality that is needed to lead a club. He can be both strict and lenient depending on what the situation is asking for. A person who knows how to get his work done. Hussainur is an ideal EB and NSUAC can count on him.</p>
         </div>
     </div>
-    
-
-    </div>
 
 
-    {% endblock %}
+</div>
+
+
+{% endblock %}
