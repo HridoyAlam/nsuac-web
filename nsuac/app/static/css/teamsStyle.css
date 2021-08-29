@@ -2,37 +2,46 @@ body {
     text-align: center;
 }
 
-.container .row .infoBox {
+.card {
+    background: inherit;
+}
+.card-img{
+        object-fit: contain;
+}
+
+@media (min-width: 992px){
+    .container .row .infoBox {
     border: 1px solid rgb(114 113 113);
     max-width: 23%;
     margin: 1%;
 }
 
-.card {
-    background: inherit;
-}
-
 .card-img {
-    height: 160px;
-    object-fit: contain;
+    height: 20vw;
+    margin-bottom: 10px;
+}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 768px){
     .container .row .infoBox {
         border: 1px solid rgb(114 113 113);
         max-width: 45%;
-        margin: 2%;
+        margin: 5%;
     }
 
     .card-img {
         width: 240px;
+        height: 30vw;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
     .container .row .infoBox {
         border: 1px solid rgb(114 113 113);
         max-width: 90%;
         margin: 3%;
+    }
+    .card-img {
+        height: 65vw;
     }
 }
