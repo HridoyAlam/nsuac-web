@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
     <!-- Simple Line Font -->
@@ -76,7 +76,8 @@
                         <a href="{% url 'home' %}" class="navbar-brand nav-brand2">
                             <h2 style="color: white;">
                                 <img style="width: 36px;" src="{% static 'images/ac.png' %}" alt="">
-                                <b>NSUAC</b></h2>
+                                <b>NSUAC</b>
+                            </h2>
                         </a>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
@@ -166,7 +167,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                
+
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="{% url 'contact' %}">Contact</a>
@@ -181,7 +182,7 @@
                                         <li><a class="dropdown-item" href="{% url 'subeb' %}">Sub-Executive Body Member</a></li>
                                         <li><a class="dropdown-item" href="{% url 'hallOfFame' %}">Hall of Fame</a></li>
 
-                                        </ul>
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -189,7 +190,7 @@
                                         Teams<span class="glyphicon glyphicon-chevron-down pull-right"></span>
                                     </a>
                                     <ul class="dropdown-menu">
-                                
+
                                         <li><a class="dropdown-item" href="{% url 'team_badminton' %}">NSU Badminton</a></li>
                                         <li><a class="dropdown-item" href="{% url 'team_basketball' %}">NSU Basketball</a></li>
                                         <li><a class="dropdown-item" href="{% url 'team_cricket' %}">NSU Cricket</a></li>
