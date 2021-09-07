@@ -53,6 +53,7 @@ class Badminton(models.Model):
     bad_id = models.AutoField
     bad_name = models.CharField(max_length=30)
     bad_batch = models.IntegerField()
+    bad_major = models.CharField(max_length=4)
     bad_image = models.ImageField()
 
     def __str__(self):
@@ -62,6 +63,7 @@ class Cricket(models.Model):
     cri_id = models.AutoField
     cri_name = models.CharField(max_length=30)
     cri_batch = models.IntegerField()
+    cri_major = models.CharField(max_length=4)
     cri_image = models.ImageField()
 
     def __str__(self):
@@ -72,6 +74,7 @@ class Basketball(models.Model):
     bas_id = models.AutoField
     bas_name =  models.CharField(max_length=30)
     bas_batch = models.IntegerField()
+    bas_major = models.CharField(max_length=4)
     bas_image = models.ImageField()
 
     def __str__(self):
@@ -81,6 +84,7 @@ class Football(models.Model):
     foot_id = models.AutoField
     foot_name = models.CharField(max_length=30)
     foot_batch = models.IntegerField()
+    foot_major = models.CharField(max_length=4)
     foot_image = models.ImageField()
 
     def __str__(self):
@@ -90,6 +94,7 @@ class TableTennis(models.Model):
     tt_id = models.AutoField
     tt_name = models.CharField(max_length=30)
     tt_batch = models.IntegerField()
+    tt_major = models.CharField(max_length=4)
     tt_image = models.ImageField()
 
     def __str__(self):
@@ -99,6 +104,7 @@ class SubEb(models.Model):
     s_id = models.AutoField
     s_name = models.CharField(max_length=30)
     s_batch = models.IntegerField()
+    s_major = models.CharField(max_length=4)
     s_image = models.ImageField()
 
     def __str__(self):
