@@ -172,3 +172,7 @@ def messages_from(request):
 def blog(request):
     bg = Blog.objects.all()
     return render(request, 'blog.html', {'bg':bg})
+
+
+def media_cover(request):
+    return render(request, 'media_cover.html', {})

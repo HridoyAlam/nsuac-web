@@ -10,6 +10,8 @@ urlpatterns = [
     path('faq.html', views.faq, name="faq"),
     path('gallery.html', views.gallery, name="gallery"),
 
+    path('media_cover', views.media_cover, name="media_cover"),
+
     path('eb.html', views.eb, name="eb"),
     path('subeb.html', views.subeb, name="subeb"),
     path('hallOfFame.html', views.hallOfFame, name="hallOfFame"),

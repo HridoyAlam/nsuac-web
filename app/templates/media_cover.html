@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+
+    <div class="container">
+        <div class="row">
+            <div style="text-align: center; padding: 10px;padding-bottom: 10px;" class="col-md-12">
+                <h2>Media Coverage</h2>
+            </div>
+        </div>
+        <div class="row">    
+            <div class="col-md-6 col-xs-12 infoBox">
+                <div class="card">
+                    <img src="{% static 'images/others/2.jpg' %}" class="card-img" alt="player">
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 infoBox">
+                <div class="card">
+                    <img src="{% static 'images/others/3.jpg' %}" class="card-img" alt="player">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
