@@ -147,7 +147,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587 # it needs to be different from 8080(Test server)
 EMAIL_HOST_USER = 'athletics.club@northsouth.edu' # dentist email address
-#EMAIL_HOST_PASSWORD = 'nsuac105best'
+EMAIL_HOST_PASSWORD = 'nsuac105best'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'hridoy@example.com'
 
